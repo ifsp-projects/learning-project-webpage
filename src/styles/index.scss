@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+
+  @media (resolution: 144dpi) {
+    font-size: 80%;
+  }
+
+  @media (resolution: 108dpi) {
+    font-size: 80%;
+  }
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #334155;
+}
