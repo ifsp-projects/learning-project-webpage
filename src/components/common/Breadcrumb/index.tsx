@@ -34,7 +34,7 @@ export const Breadcrumb: React.FC<BreadcrumbProps> = ({
             item.href && !disableAnchor ? Link : 'p',
             {
               href: item.href || '/',
-              className: `w-fit ${disableLineWrap ? 'flex-1' : ''} text-slate-500 overflow-hidden text-ellipsis whitespace-nowrap text-sm ${item.href ? 'hover:underline' : ''}`
+              className: `w-fit ${disableLineWrap ? 'flex-1' : ''} font-light text-slate-500 overflow-hidden text-ellipsis whitespace-nowrap text-xs ${item.href ? 'hover:underline' : ''}`
             },
             item.name
           )}
