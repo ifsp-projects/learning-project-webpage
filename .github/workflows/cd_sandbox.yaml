@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v3
 
       - name: Set up Node.js
@@ -26,4 +26,13 @@ jobs:
         run: |
           npm install
           npm run build
+
+      - name: Docker Build
+        run : |
+          docker build -t ci -f Dockerfile .
+
+      - name: Authorization
+        run: |
+          echo "Your Pull Request has been authorized successfully! 🥳"
+
 
