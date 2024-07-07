@@ -1,6 +1,10 @@
 'use client'
 
-export const animateCSS = async (element, animation, prefix = 'animate__') => {
+export const animateCSS = async (
+  element: any,
+  animation: any,
+  prefix = 'animate__'
+) => {
   try {
     const animationName = `${prefix}${animation}`
     const node = document.querySelector(element)
@@ -17,8 +21,7 @@ export const animateCSS = async (element, animation, prefix = 'animate__') => {
     }
 
     await new Promise(resolve => {
-      // When the animation ends, we clean the classes and resolve the Promise
-      function handleAnimationEnd(event) {
+      function handleAnimationEnd(event: { stopPropagation: () => void }) {
         event.stopPropagation()
         node.classList.remove(`${prefix}animated`, animationName)
         node.removeEventListener('animationend', handleAnimationEnd)
