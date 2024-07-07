@@ -1,3 +1,8 @@
+import { Logged } from './Logged'
+import { NotLogged } from './NotLogged'
+
 export default function Home() {
-  return <main className="min-h-[62vh]">projeto</main>
+  const isUserLogged = true
+
+  return isUserLogged ? <Logged /> : <NotLogged />
 }

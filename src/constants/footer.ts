@@ -1,11 +1,11 @@
 export const footerLinks = [
   {
-    title: 'Preferências',
+    title: 'Plataforma',
     links: [
-      { label: 'Acessibilidade', href: '/' },
-      { label: 'Normas', href: '/' },
-      { label: 'Dados', href: '/' },
-      { label: 'Banco de Dados', href: '/' },
+      { label: 'Meu Perfil', href: '/' },
+      { label: 'Sobre nós', href: '/' },
+      { label: 'Ver minhas aulas', href: '/' },
+      { label: 'Início', href: '/' },
       { label: 'Informações', href: '/' }
     ]
   },
@@ -17,18 +17,18 @@ export const footerLinks = [
       { label: 'Quem somos', href: '/' },
       { label: 'Contato', href: '/' },
       { label: 'Redes Sociais', href: '/' },
-      { label: 'Código fonte', href: '/' }
+      { label: 'Envie um email', href: '/' }
     ]
   },
   {
-    title: 'Descubra',
+    title: 'Preferências',
     links: [
-      { label: 'API', href: '/' },
-      { label: 'Academy', href: '/' },
+      { label: 'Normas', href: '/' },
+      { label: 'Acessibilidade', href: '/' },
       { label: 'Informações pessoais', href: '/' },
-      { label: 'Adicione um artigo', href: '/' },
+      { label: 'Inscreva sua instituição', href: '/' },
       { label: 'Informações', href: '/' },
-      { label: 'Blog', href: '/' }
+      { label: 'Perguntas frequentes', href: '/' }
     ]
   }
 ]

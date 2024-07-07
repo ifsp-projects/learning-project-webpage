@@ -14,20 +14,20 @@ import Image from 'next/image'
 const Footer = () => {
   return (
     <footer className="absolute w-full">
-      <div className="flex min-h-[360px] w-full flex-col gap-8 border-t border-slate-100 bg-slate-50 px-8 py-16">
+      <div className="flex min-h-[360px] w-full flex-col gap-8 border-t border-slate-300 bg-slate-50 px-8 py-16">
         <article className="mx-auto w-full max-w-6xl">
           <span className="flex w-full cursor-pointer justify-start text-lg font-[700] lg:text-3xl">
             <span>#nomeProjeto</span>
           </span>
         </article>
         <article className="mx-auto w-full max-w-6xl flex-row">
-          <ul className="flex w-full flex-wrap gap-6 sm:mt-0 sm:flex-nowrap">
+          <ul className="flex w-full flex-col gap-6 sm:mt-0 lg:flex-row">
             {footerLinks.map((link: FooterData, index: number) => (
               <li
                 key={`${link.title}-${index}`}
-                className="flex w-full min-w-[140px] flex-col items-center justify-center gap-4 text-base sm:items-start sm:justify-normal"
+                className="flex w-full min-w-[140px] flex-col gap-4 border-b border-slate-300 pb-4 text-base lg:border-transparent lg:pb-0"
               >
-                <span className="text-xl">{link.title}</span>
+                <span className="text-base font-normal">{link.title}</span>
                 {link.links.map((link: FooterLink, index: number) => (
                   <Link
                     key={`${link.label}-${index}`}
@@ -39,20 +39,20 @@ const Footer = () => {
                 ))}
               </li>
             ))}
-            <div className="flex w-full min-w-[140px] flex-col items-center justify-center gap-4 sm:items-start sm:justify-normal lg:gap-8">
+            <div className="flex w-full min-w-[140px] flex-col gap-4 lg:gap-8">
               <span className="text-xl">Social Media</span>
               <p className="text-sm text-slate-500">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
                 quia perferendi!
               </p>
-              <div className="flex items-center justify-center gap-2">
+              <div className="flex items-center gap-2">
                 <FaFacebookSquare size={32} fill="#334155" />
                 <FaInstagramSquare size={32} fill="#334155" />
                 <FaTwitterSquare size={32} fill="#334155" />
                 <FaYoutubeSquare size={32} fill="#334155" />
                 <FaGithubSquare size={32} fill="#334155" />
               </div>
-              <figure>
+              <figure className="w-full">
                 <Image
                   src={
                     'https://vtp.ifsp.edu.br/images/CDI/Identidade_Visual/IFSP-VTP-Logo-Color-5.png'
