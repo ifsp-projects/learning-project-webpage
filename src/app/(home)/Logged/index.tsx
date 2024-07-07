@@ -1,7 +1,9 @@
-import { MyClassRooms } from "./components/MyClassrooms"
+import { MyClassRooms } from './components/MyClassrooms'
 
 export const Logged: React.FC = () => {
-  return <main className="min-h-[62vh]">
-    <MyClassRooms />
-  </main>
+  return (
+    <main className="min-h-[62vh]">
+      <MyClassRooms />
+    </main>
+  )
 }
