@@ -1,14 +1,16 @@
-version: '3.8'
+version: "3.7"
 
 services:
-  app:
+  learning-project-webpage:
+    image: learning-project-webpage
     build:
       context: .
       dockerfile: Dockerfile
+    container_name: learning-project-webpage
+    restart: always
+    volumes:
+      - ./:/app
+      - /app/node_modules
+      - /app/.next
     ports:
       - "3000:3000"
-    environment:
-      - NODE_ENV=production
-    volumes:
-      - .:/app
-      - /app/node_modules
