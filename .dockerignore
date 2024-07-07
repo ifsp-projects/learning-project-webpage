@@ -10,7 +10,6 @@ commitlint.config.js
 LICENSE
 .eslintignore
 .eslintrc.json
-.husky
 commitlint.config.js
 tsup.config.ts
 tsconfig.json
