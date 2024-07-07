@@ -5,6 +5,12 @@ WORKDIR /app
 COPY package.json ./
 COPY package-lock.json ./
 
+RUN npm config set fetch-retry-maxtimeout 60000
+
+RUN npm config set registry https://registry.npmjs.org/
+
+RUN npm install -g npm@latest
+
 RUN npm install
 
 COPY . .
