@@ -6,7 +6,7 @@ export const ModalContainer: React.FC<ModalContainerProps> = ({
   children
 }) => {
   return (
-    <div className="animate__animated animate__fadeInDown fixed right-0 z-20 mt-[25px] h-[565px] w-[325px] translate-y-2 rounded-lg border border-[#f7f7f7] bg-[#fff] shadow-md drop-shadow-md transition-all sm:mt-[25px] sm:h-[560px] lg:left-[70%]">
+    <div className="animate__animated animate__fadeInDown fixed right-0 z-20 mt-[25px] h-[565px] w-[325px] translate-y-2 rounded-lg border border-[#f7f7f7] bg-[#fff] shadow-md drop-shadow-md transition-all sm:mt-[25px] sm:h-[560px] lg:left-[9%]">
       {children}
     </div>
   )

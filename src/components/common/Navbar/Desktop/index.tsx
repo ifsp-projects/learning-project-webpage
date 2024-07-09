@@ -4,15 +4,14 @@ import { Children, useState } from 'react'
 import Image from 'next/image'
 
 import { Container } from '@/components/toolkit/Container'
-import { HamburgerButton } from '../../HamburgerButton'
 
 import { IoIosSearch } from 'react-icons/io'
 import { FaBell } from 'react-icons/fa'
 import { IoSettingsSharp } from 'react-icons/io5'
 import { BsCalendar3 } from 'react-icons/bs'
 import { MdOutlineExplore } from 'react-icons/md'
-import MiniNavbar from '../ModalContainer'
-import { Sidebar } from '../Sidebar'
+import SideNav from '../sidebar'
+
 
 export const DesktopNavbarLayout: React.FC = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false)
@@ -24,7 +23,7 @@ export const DesktopNavbarLayout: React.FC = () => {
       data-cid="desktop-navbar"
     >
       <nav className="flex w-full items-center gap-4 text-white">
-        <Sidebar />
+        <SideNav/>
         <div className="flex w-full gap-4">
           <div className="relative flex w-full">
             <figure className="pointer-events-none absolute left-4 top-1/2 z-10 w-5 -translate-y-1/2 text-slate-200">
