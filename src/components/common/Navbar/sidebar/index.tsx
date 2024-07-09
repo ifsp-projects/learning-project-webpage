@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { HamburgerButton } from '../../HamburgerButton'
-import MiniNavbar from '../MiniNavbar'
+import ModalContainer from '../ModalContainer'
 
 export const Sidebar: React.FC = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false)
@@ -14,12 +14,11 @@ export const Sidebar: React.FC = () => {
         onClick={() => setIsSidebarOpen(!isSidebarOpen)}
         variant="primary"
       />
-
-
-        {isSidebarOpen ? (
-          <MiniNavbar setShowMenu={setIsSidebarOpen} showMenu={isSidebarOpen} children={''}  />
-        ) : null}
-
+      {isSidebarOpen ? (
+        <ModalContainer setShowMenu={setIsSidebarOpen} showMenu={isSidebarOpen}>
+          testando
+        </ModalContainer>
+      ) : null}
     </div>
   )
 }
