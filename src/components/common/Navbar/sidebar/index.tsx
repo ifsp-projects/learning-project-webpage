@@ -1,15 +1,15 @@
-'use client';
+'use client'
 
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import { HamburgerButton } from '../../HamburgerButton'
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname } from 'next/navigation'
 import ModalContainer from '../ModalContainer'
 
 
-import { Icon } from '@iconify/react';
-import { SIDENAV_ITEMS } from './constants';
-import { SideNavItem } from './types';
+import { Icon } from '@iconify/react'
+import { SIDENAV_ITEMS } from './constants'
+import { SideNavItem } from './types'
 
 
 export const SideNav: React.FC = () => {
@@ -38,24 +38,24 @@ export const SideNav: React.FC = () => {
 
           <div className="flex flex-col space-y-2  md:px-6 ">
            {SIDENAV_ITEMS.map((item, idx) => {
-              return <MenuItem key={idx} item={item} />;
+              return <MenuItem key={idx} item={item} />
            })}
         </div>
       </div>
       </ModalContainer> 
       ) : null} 
     </div>
-  );
-};
+  )
+}
 
 export default SideNav;
 
 const MenuItem = ({ item }: { item: SideNavItem }) => {
-  const pathname = usePathname();
-  const [subMenuOpen, setSubMenuOpen] = useState(false);
+  const pathname = usePathname()
+  const [subMenuOpen, setSubMenuOpen] = useState(false)
   const toggleSubMenu = () => {
-    setSubMenuOpen(!subMenuOpen);
-  };
+    setSubMenuOpen(!subMenuOpen)
+  }
 
   return (
     <div className="">
@@ -107,5 +107,5 @@ const MenuItem = ({ item }: { item: SideNavItem }) => {
         </Link>
       )}
     </div>
-  );
-};
+  )
+}
