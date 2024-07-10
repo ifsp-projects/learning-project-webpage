@@ -1,20 +1,14 @@
-'use client'
-
-import { useState } from 'react'
 import Image from 'next/image'
 
 import { Container } from '@/components/toolkit/Container'
-import { HamburgerButton } from '../../HamburgerButton'
 
 import { IoIosSearch } from 'react-icons/io'
 import { FaBell } from 'react-icons/fa'
 import { IoSettingsSharp } from 'react-icons/io5'
 import { BsCalendar3 } from 'react-icons/bs'
-import { MdOutlineExplore } from 'react-icons/md'
+// import { SidebarNavigation } from '../Sidebar/SidebarNavigation'
 
 export const DesktopNavbarLayout: React.FC = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false)
-
   return (
     <Container
       className="hidden w-full px-12 py-4 lg:block"
@@ -22,11 +16,7 @@ export const DesktopNavbarLayout: React.FC = () => {
       data-cid="desktop-navbar"
     >
       <nav className="flex w-full items-center gap-4 text-white">
-        <HamburgerButton
-          onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-          variant="primary"
-          isOpen={isSidebarOpen}
-        />
+        {/* <SidebarNavigation /> */}
         <div className="flex w-full gap-4">
           <div className="relative flex w-full">
             <figure className="pointer-events-none absolute left-4 top-1/2 z-10 w-5 -translate-y-1/2 text-slate-200">
@@ -44,7 +34,11 @@ export const DesktopNavbarLayout: React.FC = () => {
         <div className="flex w-full items-center justify-end gap-6">
           <FaBell className="cursor-pointer" size={20} fill="#334155" />
           <BsCalendar3 className="cursor-pointer" size={20} fill="#334155" />
-          <IoSettingsSharp className="cursor-pointer" size={20} fill="#334155" />
+          <IoSettingsSharp
+            className="cursor-pointer"
+            size={20}
+            fill="#334155"
+          />
           <figure>
             <Image
               src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
