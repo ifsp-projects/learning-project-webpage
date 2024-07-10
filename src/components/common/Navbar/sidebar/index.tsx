@@ -1,59 +1,18 @@
 'use client'
 
 import React, { useState } from 'react'
-import { HamburgerButton } from '../../HamburgerButton'
-import Link from 'next/link';
+import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import ModalContainer from '../ModalContainer'
-
 
 import { Icon } from '@iconify/react'
-import { SIDENAV_ITEMS } from './constants'
-import { SideNavItem } from './types'
+import { SideNavItem, SideNavItemProps } from './types'
 
-
-export const SideNav: React.FC = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false)
-  
-  return (
-    <div className="ml-6">
-      <HamburgerButton
-        isOpen={isSidebarOpen}
-        onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-        variant="primary"
-      />
-      {isSidebarOpen ? (
-        <ModalContainer setShowMenu={setIsSidebarOpen} showMenu={isSidebarOpen}>
-          
-        
-      
-       <div className="flex flex-col space-y-6 w-full">
-         <Link
-            href="/"
-            className="flex flex-row space-x-3 items-center justify-center md:justify-start md:px-6 border-b border-zinc-200 h-12 w-full"
-          >
-            <span className="h-7 w-7 bg-zinc-300 rounded-lg" />
-            <span className="font-bold text-xl hidden md:flex">Logo</span>
-         </Link>
-
-          <div className="flex flex-col space-y-2  md:px-6 ">
-           {SIDENAV_ITEMS.map((item, idx) => {
-              return <MenuItem key={idx} item={item} />
-           })}
-        </div>
-      </div>
-      </ModalContainer> 
-      ) : null} 
-    </div>
-  )
-}
-
-export default SideNav;
-
-const MenuItem = ({ item }: { item: SideNavItem }) => {
+export const MenuItem: React.FC<SideNavItemProps> = ({ item }) => {
   const pathname = usePathname()
-  const [subMenuOpen, setSubMenuOpen] = useState(false)
-  const toggleSubMenu = () => {
+
+  const [subMenuOpen, setSubMenuOpen] = useState<boolean>(false)
+
+  const handleToggleSubMenu = () => {
     setSubMenuOpen(!subMenuOpen)
   }
 
@@ -62,48 +21,42 @@ const MenuItem = ({ item }: { item: SideNavItem }) => {
       {item.submenu ? (
         <>
           <button
-            onClick={toggleSubMenu}
-            className={`flex flex-row items-center p-2 rounded-lg hover-bg-zinc-100 w-full justify-between hover:bg-zinc-100 ${
+            onClick={handleToggleSubMenu}
+            className={`hover-bg-zinc-100 flex w-full flex-row items-center justify-between rounded-lg p-2 hover:bg-zinc-100 ${
               pathname.includes(item.path) ? 'bg-zinc-100' : ''
             }`}
           >
-            <div className="flex flex-row space-x-4 items-center">
-              {item.icon}
-              <span className="font-semibold text-xl  flex">{item.title}</span>
+            <div className="flex flex-row items-center space-x-4">
+              <figure>{item.icon}</figure>
+              <span className="flex text-xl">{item.title}</span>
             </div>
 
-            <div className={`${subMenuOpen ? 'rotate-180' : ''} flex`}>
+            <figure className={`${subMenuOpen ? 'rotate-180' : ''} flex`}>
               <Icon icon="lucide:chevron-down" width="24" height="24" />
-            </div>
+            </figure>
           </button>
 
-          {subMenuOpen && (
+          {subMenuOpen ? (
             <div className="my-2 ml-12 flex flex-col space-y-4">
               {item.subMenuItems?.map((subItem, idx) => {
                 return (
-                  <Link
-                    key={idx}
-                    href={subItem.path}
-                    className={`${
-                      subItem.path === pathname ? 'font-bold' : ''
-                    }`}
-                  >
+                  <Link key={idx} href={subItem.path}>
                     <span>{subItem.title}</span>
                   </Link>
-                );
+                )
               })}
             </div>
-          )}
+          ) : null}
         </>
       ) : (
         <Link
           href={item.path}
-          className={`flex flex-row space-x-4 items-center p-2 rounded-lg hover:bg-zinc-100 ${
+          className={`flex flex-row items-center space-x-4 rounded-lg p-2 hover:bg-zinc-100 ${
             item.path === pathname ? 'bg-zinc-100' : ''
           }`}
         >
-          {item.icon}
-          <span className="font-semibold text-xl flex">{item.title}</span>
+          <figure>{item.icon}</figure>
+          <span className="flex text-xl">{item.title}</span>
         </Link>
       )}
     </div>

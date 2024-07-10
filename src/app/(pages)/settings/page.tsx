@@ -1,9 +1,16 @@
-import React from 'react'
 
-const SettingsPage = () => {
-    return (
-        <div>page</div>
-    )
+import Footer from '@/components/common/Footer'
+import { NextPage } from 'next'
+
+const Page: NextPage = () => {
+  return (
+    <>
+      <main>
+        settings page
+      </main>
+      <Footer />
+    </>
+  )
 }
 
-export default SettingsPage
+export default Page

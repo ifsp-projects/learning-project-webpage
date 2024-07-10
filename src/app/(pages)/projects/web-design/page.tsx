@@ -1,9 +1,16 @@
-import React from 'react'
 
-const WebDesignPage = () => {
-    return (
-        <div>page</div>
-    )
+import Footer from '@/components/common/Footer'
+import { NextPage } from 'next'
+
+const Page: NextPage = () => {
+  return (
+    <>
+      <main>
+        web design
+      </main>
+      <Footer />
+    </>
+  )
 }
 
-export default WebDesignPage
+export default Page

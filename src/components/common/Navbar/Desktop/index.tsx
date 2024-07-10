@@ -9,9 +9,7 @@ import { IoIosSearch } from 'react-icons/io'
 import { FaBell } from 'react-icons/fa'
 import { IoSettingsSharp } from 'react-icons/io5'
 import { BsCalendar3 } from 'react-icons/bs'
-import { MdOutlineExplore } from 'react-icons/md'
-import SideNav from '../sidebar'
-
+import { SideNav } from '../Sidebar/SidebarNavigation'
 
 export const DesktopNavbarLayout: React.FC = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false)

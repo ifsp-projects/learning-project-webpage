@@ -1,9 +1,16 @@
-import React from 'react'
 
-const HelpPage = () => {
-    return (
-        <div>page</div>
-    )
+import Footer from '@/components/common/Footer'
+import { NextPage } from 'next'
+
+const Page: NextPage = () => {
+  return (
+    <>
+      <main>
+        help page
+      </main>
+      <Footer />
+    </>
+  )
 }
 
-export default HelpPage
+export default Page

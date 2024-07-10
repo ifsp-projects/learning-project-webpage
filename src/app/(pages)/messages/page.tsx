@@ -1,9 +1,16 @@
-import React from 'react'
 
-const MessagesPage = () => {
-    return (
-        <div>page</div>
-    )
+import Footer from '@/components/common/Footer'
+import { NextPage } from 'next'
+
+const Page: NextPage = () => {
+  return (
+    <>
+      <main>
+        messages
+      </main>
+      <Footer />
+    </>
+  )
 }
 
-export default MessagesPage
+export default Page
