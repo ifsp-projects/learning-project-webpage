@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 import { Icon } from '@iconify/react'
-import { SideNavItem, SideNavItemProps } from './types'
+import { SideNavItemProps } from './types'
 
 export const MenuItem: React.FC<SideNavItemProps> = ({ item }) => {
   const pathname = usePathname()

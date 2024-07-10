@@ -1,6 +1,6 @@
 'use client'
 
-import { Children, useState } from 'react'
+import { useState } from 'react'
 import Image from 'next/image'
 
 import { Container } from '@/components/toolkit/Container'
