@@ -1,6 +1,3 @@
-'use client'
-
-import { useState } from 'react'
 import Image from 'next/image'
 
 import { Container } from '@/components/toolkit/Container'
@@ -12,8 +9,6 @@ import { BsCalendar3 } from 'react-icons/bs'
 import { SideNav } from '../Sidebar/SidebarNavigation'
 
 export const DesktopNavbarLayout: React.FC = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false)
-
   return (
     <Container
       className="hidden w-full px-12 py-4 lg:block"
