@@ -6,7 +6,7 @@ import { IoIosSearch } from 'react-icons/io'
 import { FaBell } from 'react-icons/fa'
 import { IoSettingsSharp } from 'react-icons/io5'
 import { BsCalendar3 } from 'react-icons/bs'
-import { SidebarNavigation } from '../Sidebar/SidebarNavigation'
+// import { SidebarNavigation } from '../Sidebar/SidebarNavigation'
 
 export const DesktopNavbarLayout: React.FC = () => {
   return (
@@ -16,7 +16,7 @@ export const DesktopNavbarLayout: React.FC = () => {
       data-cid="desktop-navbar"
     >
       <nav className="flex w-full items-center gap-4 text-white">
-        <SidebarNavigation />
+        {/* <SidebarNavigation /> */}
         <div className="flex w-full gap-4">
           <div className="relative flex w-full">
             <figure className="pointer-events-none absolute left-4 top-1/2 z-10 w-5 -translate-y-1/2 text-slate-200">
