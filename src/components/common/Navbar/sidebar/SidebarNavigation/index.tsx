@@ -7,6 +7,7 @@ import { useState } from "react"
 import { SIDENAV_ITEMS } from "../data"
 import { MenuItem } from ".."
 
+
 export const SidebarNavigation: React.FC = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false)
 
