@@ -27,7 +27,7 @@ export const DesktopNavbarLayout: React.FC = () => {
               name="search"
               id="search"
               autoComplete="off"
-              className="w-full rounded-sm bg-slate-700 bg-opacity-10 px-3 py-2 pl-12 text-base outline-none duration-default focus:border-blue-400 focus:ring-2 focus:ring-blue-400"
+              className="w-full rounded-sm bg-slate-700 bg-opacity-5 px-3 py-2 pl-12 text-base outline-none duration-default focus:border-blue-400 focus:ring-2 focus:ring-blue-400"
             />
           </div>
         </div>

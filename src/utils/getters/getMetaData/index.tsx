@@ -3,13 +3,18 @@ import { OpenGraphType } from 'next/dist/lib/metadata/types/opengraph-types'
 
 interface GetMataDataProps {
   type?: OpenGraphType
-  image: string
+  opengraph: string
   title: string
   description: string
 }
 
-export const getMetaData = ({ title, description, image, type = "website" }: GetMataDataProps): Metadata => {
-  const images = [image]
+export const getMetaData = ({
+  title,
+  description,
+  opengraph,
+  type = 'website'
+}: GetMataDataProps): Metadata => {
+  const images = [opengraph]
 
   return {
     title,
