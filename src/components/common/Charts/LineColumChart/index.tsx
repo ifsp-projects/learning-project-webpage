@@ -36,7 +36,7 @@ export const LineColumnChart: React.FC = () => {
       margin: 50,
       style: {
         fontWeight: 'normal',
-        color: '#22c55e'
+        color: '#334155'
       }
     },
     xAxis: [
