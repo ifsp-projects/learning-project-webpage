@@ -14,8 +14,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={"bg-white"}>
+    <html lang="pt-br">
+      <body className={" selection:bg-teal-100 selection:text-teal-900"}>
         <div className="flex">
           <SideNav/>
           <main className=" flex-1">

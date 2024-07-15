@@ -4,14 +4,14 @@ import { ContentCardProps } from './types'
 
 export const ContentCard: React.FC<ContentCardProps> = ({ card }) => {
   return (
-    <article className="cursor-pointer group max-w-xs flex h-full w-full flex-1 flex-col rounded-sm border border-slate-300 bg-white ring-1 ring-transparent duration-300 hover:border-blue-500 hover:ring-blue-500">
-      <figure className="relative">
+    <article className="cursor-pointer group max-w-xs flex h-full w-full flex-1 flex-col rounded-sm border border-slate-300 bg-white ring-1 ring-transparent duration-300 hover:border-blue-500 hover:ring-blue-500 lg:max-w-xs">
+      <figure className="relative w-full">
         <Image
-          src="https://t3.ftcdn.net/jpg/01/20/39/22/360_F_120392263_rQz9G8tZXxW66XEjSccKUc8m94fAypng.jpg"
+          src="https://png.pngtree.com/background/20220731/original/pngtree-green-tea-gradient-glassmorphism-background-picture-image_1908813.jpg"
           alt={card.title}
-          width={400}
-          height={400}
-          className="object-cover opacity-10"
+          width={600}
+          height={600}
+          className="object-cover"
         />
       </figure>
       <div className="flex h-full flex-col justify-between gap-4 p-4">
@@ -32,8 +32,8 @@ export const ContentCard: React.FC<ContentCardProps> = ({ card }) => {
           </p>
         </div>
         <div className="flex gap-2">
-          <p className='text-sm text-slate-400'>{card.modules} módulos • </p>
-          <p className='text-sm text-slate-400'>{card.classes} aulas totais</p>
+          <p className="text-sm text-slate-400">{card.modules} módulos • </p>
+          <p className="text-sm text-slate-400">{card.classes} aulas totais</p>
         </div>
       </div>
     </article>
