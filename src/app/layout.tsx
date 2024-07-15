@@ -17,8 +17,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={"bg-white"}>
         <div className="flex">
-          <SideNav />
-          <main className="flex-1">
+          <SideNav/>
+          <main className=" flex-1">
             <Navbar />
             {children}
           </main>
