@@ -9,7 +9,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ copy }) => {
         {SERVICES_ICONS[copy.icon]}
       </figure>
       <article className='flex flex-col items-center gap-2'>
-        <h3 className='text-lg text-center font-semibold lg:text-xl'>{copy.title}</h3>
+        <p className='text-lg text-center font-semibold lg:text-xl'>{copy.title}</p>
         <p className='text-sm text-center'>{copy.description}</p>
       </article>
     </li>
