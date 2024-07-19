@@ -1,6 +1,8 @@
+import React from 'react'
+
 import { ContentCard } from '@/components/common/ContentCard'
 import { Container } from '@/components/toolkit/Container'
-import React from 'react'
+
 import { FAKE_DATA } from './data'
 
 export const MyClassRooms: React.FC = () => {

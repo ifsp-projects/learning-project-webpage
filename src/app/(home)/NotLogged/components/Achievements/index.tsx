@@ -14,9 +14,9 @@ import { Container } from '@/components/toolkit/Container'
 export const Achievements: React.FC = () => {
   return (
     <Container
-      data-cid="achievements-academy"
       as="section"
       className="w-full py-12 lg:py-20"
+      data-cid="achievements-academy"
     >
       <div className="flex w-full flex-col items-center">
         <div className="flex w-full flex-wrap items-center gap-8">

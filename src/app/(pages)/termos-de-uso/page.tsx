@@ -1,4 +1,5 @@
 import { NextPage } from 'next'
+
 import Footer from '@/components/common/Footer'
 import { getMetaData } from '@/utils/getters/getMetaData'
 
