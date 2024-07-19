@@ -1,8 +1,9 @@
 'use client'
 
 import React, { useRef } from 'react'
-import { Editor } from '@tinymce/tinymce-react'
+
 import { textEditorAPK } from '@/environments/textEditorAPK'
+import { Editor } from '@tinymce/tinymce-react'
 
 type TextEditorProps = {
   value: string
@@ -19,10 +20,6 @@ const TextEditor = ({ value, setValue }: TextEditorProps) => {
   return (
     <>
       <Editor
-        apiKey={textEditorAPK}
-        onInit={(evt, editor) => (editorRef.current = editor)}
-        value={value}
-        onEditorChange={newValue => setValue(newValue)}
         init={{
           height: 400,
           menubar: false,
@@ -54,6 +51,10 @@ const TextEditor = ({ value, setValue }: TextEditorProps) => {
           content_style:
             'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
         }}
+        apiKey={textEditorAPK}
+        onEditorChange={newValue => setValue(newValue)}
+        onInit={(evt, editor) => (editorRef.current = editor)}
+        value={value}
       />
     </>
   )

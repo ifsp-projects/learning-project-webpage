@@ -140,7 +140,7 @@ export const LineColumnChart: React.FC = () => {
       <div className="blue-column relative">
         <div className="absolute z-20 mt-4 flex w-full justify-end">
           <button onClick={openWeeklyTargetModal}>
-            <GoGear size={16} fill="#64748b" className="cursor-pointer" />
+            <GoGear className="cursor-pointer" fill="#64748b" size={16} />
           </button>
         </div>
         <HighchartsReact highcharts={Highcharts} options={options} />

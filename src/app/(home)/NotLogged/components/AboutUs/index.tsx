@@ -1,13 +1,14 @@
+import Image from 'next/image'
+
 import { Button } from '@/components/common/Button'
 import { Container } from '@/components/toolkit/Container'
-import Image from 'next/image'
 
 export const AboutUs: React.FC = () => {
   return (
     <Container
       as="section"
-      data-cid="home-logged-out-about-us"
       className="flex flex-col gap-8 py-12 lg:gap-16 lg:py-20"
+      data-cid="home-logged-out-about-us"
       wrapperClassName="bg-slate-50"
     >
       <article className="mx-auto flex max-w-xl flex-col items-center gap-2">
@@ -17,11 +18,11 @@ export const AboutUs: React.FC = () => {
       <div className="flex w-full flex-col-reverse justify-between gap-8 lg:flex-row lg:gap-12">
         <figure className="w-full lg:max-w-[400px]">
           <Image
-            src="https://images.unsplash.com/photo-1495576775051-8af0d10f19b1?q=80&w=2016&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="about-us-image"
-            width={600}
-            height={800}
             className="rounded-sm hover:bg-transparent"
+            height={800}
+            src="https://images.unsplash.com/photo-1495576775051-8af0d10f19b1?q=80&w=2016&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            width={600}
           />
         </figure>
         <article className="flex w-full flex-1 flex-col gap-4 lg:gap-6">

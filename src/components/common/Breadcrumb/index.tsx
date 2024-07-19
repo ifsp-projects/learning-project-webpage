@@ -1,11 +1,10 @@
 import Link from 'next/link'
 import { Fragment, createElement } from 'react'
+import { GoChevronRight } from 'react-icons/go'
+import { IoHomeOutline } from 'react-icons/io5'
 
 import { BreadcrumbProps } from './types'
 import { breadcrumbVariants } from './variance'
-
-import { IoHomeOutline } from 'react-icons/io5'
-import { GoChevronRight } from 'react-icons/go'
 
 export const Breadcrumb: React.FC<BreadcrumbProps> = ({
   variant,
@@ -29,7 +28,7 @@ export const Breadcrumb: React.FC<BreadcrumbProps> = ({
       </figure>
       {items.map((item, index) => (
         <Fragment key={`${item.name}-${index}`}>
-          <GoChevronRight width={12} fill="#64748b" />
+          <GoChevronRight fill="#64748b" width={12} />
           {createElement(
             item.href && !disableAnchor ? Link : 'p',
             {

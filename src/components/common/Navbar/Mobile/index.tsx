@@ -1,9 +1,3 @@
-
-
 export const MobileNavbarLayout: React.FC = () => {
-  return (
-    <nav className="lg:hidden block">
-      layout mobile
-    </nav>
-  )
+  return <nav className="block lg:hidden">layout mobile</nav>
 }

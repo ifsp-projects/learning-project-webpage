@@ -1,6 +1,6 @@
 export interface InsightProps {
-  title: string
   description: string
+  title: string
 }
 
 export interface InsightCardProps {

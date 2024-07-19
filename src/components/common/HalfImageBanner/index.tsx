@@ -1,4 +1,5 @@
 import Image from 'next/image'
+
 import { HalfImageBannerProps } from './types'
 
 export const HalfImageBanner: React.FC<HalfImageBannerProps> = async ({
