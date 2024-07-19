@@ -3,6 +3,7 @@
 import { usePathname } from 'next/navigation'
 import Script from 'next/script'
 import { useEffect } from 'react'
+
 import { subscribeGoogleTag } from './subscribeGoogleTag'
 
 export const GTMInjection: React.FC = () => {
