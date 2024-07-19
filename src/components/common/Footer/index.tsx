@@ -21,9 +21,9 @@ const Footer = () => {
           </span>
         </article>
         <article className="mx-auto w-full max-w-6xl flex-row">
-          <ul className="flex w-full flex-col gap-6 sm:mt-0 lg:flex-row">
+          <div className="flex w-full flex-col gap-6 sm:mt-0 lg:flex-row">
             {footerLinks.map((link: FooterData, index: number) => (
-              <li
+              <div
                 key={`${link.title}-${index}`}
                 className="flex w-full min-w-[140px] flex-col gap-4 border-b border-slate-300 pb-4 text-base lg:border-transparent lg:pb-0"
               >
@@ -37,7 +37,7 @@ const Footer = () => {
                     {link.label}
                   </Link>
                 ))}
-              </li>
+              </div>
             ))}
             <div className="flex w-full min-w-[140px] flex-col gap-4 lg:gap-8">
               <span className="text-xl">Social Media</span>
@@ -63,7 +63,7 @@ const Footer = () => {
                 />
               </figure>
             </div>
-          </ul>
+          </div>
         </article>
       </div>
     </footer>
