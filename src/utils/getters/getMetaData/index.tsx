@@ -2,10 +2,10 @@ import { Metadata } from 'next'
 import { OpenGraphType } from 'next/dist/lib/metadata/types/opengraph-types'
 
 interface GetMataDataProps {
-  type?: OpenGraphType
+  description: string
   opengraph: string
   title: string
-  description: string
+  type?: OpenGraphType
 }
 
 export const getMetaData = ({
