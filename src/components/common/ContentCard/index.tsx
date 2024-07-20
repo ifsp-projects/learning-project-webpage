@@ -5,7 +5,7 @@ import { ContentCardProps } from './types'
 
 export const ContentCard: React.FC<ContentCardProps> = ({ card }) => {
   return (
-    <article className="group relative flex h-full w-full flex-1 cursor-pointer flex-col rounded-sm border border-slate-300 bg-white ring-1 ring-transparent duration-300 hover:border-blue-500 hover:ring-blue-500 lg:max-w-xs">
+    <article className="animate__animated animate__fadeIn group relative flex h-full w-full flex-1 cursor-pointer flex-col rounded-sm border border-slate-300 bg-white ring-1 ring-transparent duration-300 hover:border-blue-500 hover:ring-blue-500 lg:max-w-xs">
       <figure className="relative w-full">
         <Image
           alt={card.title}

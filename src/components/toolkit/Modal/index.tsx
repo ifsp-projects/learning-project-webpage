@@ -1,4 +1,5 @@
 import { Fragment, cloneElement } from 'react'
+import { HiXMark } from 'react-icons/hi2'
 
 import { Dialog, Transition } from '@headlessui/react'
 
@@ -57,10 +58,10 @@ export const Modal: React.FC<ModalProps> = ({
                   <div className="absolute right-3 top-3">
                     <button
                       aria-label="close-modal"
-                      className="w-7 rounded-sm p-1 text-slate-600 duration-default hover:bg-slate-200 hover:text-slate-500"
+                      className="w-8 rounded-sm p-1 text-slate-600 duration-default hover:bg-slate-200 hover:text-slate-500"
                       onClick={handleCloseModal}
                     >
-                      Fechar
+                      <HiXMark size={24} />
                     </button>
                   </div>
                 )}
