@@ -1,6 +1,7 @@
 import '@/styles/index.scss'
 
 import { Navbar } from '@/components/common/Navbar'
+import ToastMessage from '@/components/toolkit/ToastMessage'
 import { GTMInjection } from '@/gtm'
 
 export default function RootLayout({
@@ -14,6 +15,7 @@ export default function RootLayout({
         <GTMInjection />
       </head>
       <body className="selection:bg-teal-100 selection:text-teal-900">
+        <ToastMessage />
         <Navbar />
         {children}
       </body>
