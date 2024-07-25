@@ -11,7 +11,7 @@
   "dependencies": {
     "@headlessui/react": "^2.1.1",
     "@hookform/resolvers": "^3.8.0",
-    "@iconify/react": "^5.0.1",
+    "@iconify/react": "^5.0.2",
     "@tinymce/tinymce-react": "^5.1.1",
     "animate.css": "^4.1.1",
     "bcryptjs": "^2.4.3",
