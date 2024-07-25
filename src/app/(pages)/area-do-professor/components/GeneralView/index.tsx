@@ -1,15 +1,16 @@
 import { Breadcrumb } from '@/components/common/Breadcrumb'
 import { Container } from '@/components/toolkit/Container'
-import { InsightProps } from './types'
+
 import { GENERAL_VIEW_FAKE_DATA } from './data'
 import { InsightCard } from './InsightCard'
+import { InsightProps } from './types'
 
 export const GeneralView: React.FC = () => {
   return (
     <Container
       as="section"
-      data-cid="general-view"
       className="flex flex-col gap-8 lg:gap-12"
+      data-cid="general-view"
     >
       <Breadcrumb
         items={[{ name: 'Área do Professor', href: '/area-do-professor' }]}

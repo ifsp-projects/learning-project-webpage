@@ -1,17 +1,18 @@
 import Image from 'next/image'
+
 import { Breadcrumb } from '../Breadcrumb'
 import { ContentCardProps } from './types'
 
 export const ContentCard: React.FC<ContentCardProps> = ({ card }) => {
   return (
-    <article className="cursor-pointer group max-w-xs flex h-full w-full flex-1 flex-col rounded-sm border border-slate-300 bg-white ring-1 ring-transparent duration-300 hover:border-blue-500 hover:ring-blue-500 lg:max-w-xs">
+    <article className="group relative flex h-full w-full flex-1 cursor-pointer flex-col rounded-sm border border-slate-300 bg-white ring-1 ring-transparent duration-300 hover:border-blue-500 hover:ring-blue-500 lg:max-w-xs">
       <figure className="relative w-full">
         <Image
-          src="https://png.pngtree.com/background/20220731/original/pngtree-green-tea-gradient-glassmorphism-background-picture-image_1908813.jpg"
           alt={card.title}
-          width={600}
-          height={600}
           className="object-cover"
+          height={600}
+          src="https://png.pngtree.com/background/20220731/original/pngtree-green-tea-gradient-glassmorphism-background-picture-image_1908813.jpg"
+          width={600}
         />
       </figure>
       <div className="flex h-full flex-col justify-between gap-4 p-4">

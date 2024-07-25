@@ -1,10 +1,12 @@
 'use client'
 
-import { Container } from '@/components/toolkit/Container'
-import { ContentCard } from '@/components/common/ContentCard'
-import { FAKE_DATA } from './data'
-import { SkeletonContentCard } from '@/components/toolkit/SkeletonContentCard'
 import { useEffect, useState } from 'react'
+
+import { ContentCard } from '@/components/common/ContentCard'
+import { Container } from '@/components/toolkit/Container'
+import { SkeletonContentCard } from '@/components/toolkit/SkeletonContentCard'
+
+import { FAKE_DATA } from './data'
 
 export const MyClasses: React.FC = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true)
@@ -20,8 +22,8 @@ export const MyClasses: React.FC = () => {
   return (
     <Container
       as="section"
-      data-cid="my-classes"
       className="flex flex-col gap-8"
+      data-cid="my-classes"
     >
       <article>
         <h2 className="text-lg font-semibold lg:text-2xl">Aulas que leciono</h2>

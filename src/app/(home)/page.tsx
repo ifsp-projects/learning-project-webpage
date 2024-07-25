@@ -1,4 +1,5 @@
 import { getMetaData } from '@/utils/getters/getMetaData'
+
 import { Logged } from './Logged'
 import { NotLogged } from './NotLogged'
 

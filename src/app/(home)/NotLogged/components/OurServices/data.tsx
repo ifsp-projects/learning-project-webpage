@@ -1,4 +1,4 @@
-import { BsGraphUp } from "react-icons/bs";
+import { BsGraphUp } from 'react-icons/bs'
 import { FaRegLightbulb } from 'react-icons/fa'
 import { SiAwsorganizations } from 'react-icons/si'
 
@@ -24,8 +24,9 @@ export const SERVICES_DATA = [
   },
   {
     title: 'Organização',
-    description: "Organize suas aulas e matérias lecionadas em módulos, além de anexar materiais e conteúdos.",
-    icon: "report"
+    description:
+      'Organize suas aulas e matérias lecionadas em módulos, além de anexar materiais e conteúdos.',
+    icon: 'report'
   }
 ]
 

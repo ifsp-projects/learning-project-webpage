@@ -1,9 +1,9 @@
 export interface FooterData {
-  title: string;
-  links: FooterLink[];
+  links: FooterLink[]
+  title: string
 }
 
 export interface FooterLink {
-  label: string;
-  href: string;
+  href: string
+  label: string
 }

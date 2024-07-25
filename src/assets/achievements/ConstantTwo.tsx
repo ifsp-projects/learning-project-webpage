@@ -1,4 +1,4 @@
-import { IconProps } from '@/types/components/iconCopy'
+import { IconProps } from '@/types/components/icons'
 
 export const ConstantTwo: React.FC<IconProps> = props => (
   <svg
