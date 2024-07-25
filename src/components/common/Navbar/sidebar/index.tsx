@@ -1,4 +1,4 @@
-'use client';
+'use client'
 
 import React, { useState } from 'react'
 import Link from 'next/link'
@@ -25,19 +25,18 @@ export const MenuItem: React.FC<SideNavItemProps> = ({ item }) => {
             className={`hover-bg-zinc-100 flex w-full flex-row items-center justify-between rounded-lg p-2 hover:bg-zinc-100 ${
               pathname.includes(item.path) ? 'bg-zinc-100' : ''
             }`}
-            onClick={handleToggleSubMenu}
           >
-            <div className="flex flex-row space-x-4 items-center">
-              {item.icon}
-              <span className="font-semibold text-xl  flex">{item.title}</span>
+            <div className="flex flex-row items-center space-x-4">
+              <figure>{item.icon}</figure>
+              <span className="flex text-xl">{item.title}</span>
             </div>
 
             <figure className={`${subMenuOpen ? 'rotate-180' : ''} flex`}>
-              <Icon icon="lucide:chevron-down" width="24" height="24" />
+            <Icon height="24" icon="lucide:chevron-down" width="24" />
             </figure>
           </button>
 
-          {subMenuOpen && (
+          {subMenuOpen ? (
             <div className="my-2 ml-12 flex flex-col space-y-4">
               {item.subMenuItems?.map((subItem, idx) => {
                 return (
@@ -47,7 +46,7 @@ export const MenuItem: React.FC<SideNavItemProps> = ({ item }) => {
                 )
               })}
             </div>
-          )}
+          ) : null}
         </>
       ) : (
         <Link
@@ -55,10 +54,9 @@ export const MenuItem: React.FC<SideNavItemProps> = ({ item }) => {
           className={`flex flex-row items-center space-x-4 rounded-lg p-2 hover:bg-zinc-100 ${
             item.path === pathname ? 'bg-zinc-100' : ''
           }`}
-          href={item.path}
         >
-          {item.icon}
-          <span className="font-semibold text-xl flex">{item.title}</span>
+          <figure>{item.icon}</figure>
+          <span className="flex text-xl">{item.title}</span>
         </Link>
       )}
     </div>
