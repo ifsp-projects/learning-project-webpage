@@ -1,8 +1,8 @@
-import '@/styles/index.scss'
-
 import { Navbar } from '@/components/common/Navbar'
 import ToastMessage from '@/components/toolkit/ToastMessage'
 import { GTMInjection } from '@/gtm'
+
+import "@/styles/index.scss"
 
 export default function RootLayout({
   children

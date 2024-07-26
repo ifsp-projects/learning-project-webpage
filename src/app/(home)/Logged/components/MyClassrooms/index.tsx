@@ -9,7 +9,7 @@ export const MyClassRooms: React.FC = () => {
   return (
     <Container
       as="section"
-      className="flex flex-col gap-8 py-12 lg:py-20"
+      className="gap-8 py-12 lg:py-20"
       data-cid="logged-homepage-classrooms"
     >
       <article>
