@@ -17,7 +17,7 @@ const Page: NextPage = () => {
       <main>
         <section>
           <h1>Therms of Use </h1>
-          <p>escreve aqui higor</p>
+          <p>escreve aqui higor.</p>
         </section>
       </main>
       <Footer />
@@ -25,4 +25,4 @@ const Page: NextPage = () => {
   )
 }
 
-export default Page.
+export default Page
