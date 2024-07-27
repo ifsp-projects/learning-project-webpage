@@ -16,7 +16,7 @@ export const SidebarNavigation: React.FC = () => {
 
   return (
     <div className="ml-6">
-      <Sidebar />
+      <Sidebar isSidebarOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen} />
       {isSidebarOpen ? (
         <ModalContainer setShowMenu={setIsSidebarOpen} showMenu={isSidebarOpen}>
           <div className="flex w-full flex-col space-y-6">
@@ -26,7 +26,7 @@ export const SidebarNavigation: React.FC = () => {
             >
               <span className="h-7 w-7 rounded-lg bg-zinc-300" />
               <span className="hidden text-xl md:flex">Logo</span>
-            </Link> 
+            </Link>
 
             <div className="flex flex-col space-y-2 md:px-6">
               {SIDENAV_ITEMS.map((item, idx) => {

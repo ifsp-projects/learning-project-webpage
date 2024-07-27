@@ -11,7 +11,7 @@ const Page: NextPage = () => {
   return (
     <>
       <ClassroomNavbar />
-      <main className="flex w-full flex-col gap-12 lg:gap-20 py-12">
+      <main className="flex w-full flex-col gap-12 bg-zinc-50 py-12">
         <GeneralView />
         <Notices />
         <Activities />

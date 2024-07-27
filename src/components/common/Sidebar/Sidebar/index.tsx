@@ -1,15 +1,13 @@
 'use client'
 
-import { useState } from 'react'
 import { HamburgerButton } from '../../HamburgerButton'
 import { Drawer } from '../Drawer'
-import Link from 'next/link'
-import { IoLogoGithub } from 'react-icons/io5'
-import { FaLinkedin } from 'react-icons/fa6'
+import { SidebarProps } from './types'
 
-export const Sidebar: React.FC = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(true)
-
+export const Sidebar: React.FC<SidebarProps> = ({
+  isSidebarOpen,
+  setIsSidebarOpen
+}) => {
   return (
     <div className="ml-6">
       <HamburgerButton
