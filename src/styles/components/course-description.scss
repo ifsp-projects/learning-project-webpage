@@ -1,0 +1,33 @@
+[data-cid="course-description"] {
+  & {
+    @apply flex flex-col gap-4
+  }
+
+  h1 {
+    @apply text-sm
+  }
+
+  h2 {
+    @apply font-medium
+  }
+
+  strong {
+    @apply font-medium
+  }
+
+  ul {
+    @apply flex flex-col gap-1 py-4
+  }
+
+  li {
+    @apply text-slate-500 text-sm
+  }
+
+  ul li ul li {
+    @apply pl-4
+  }
+
+  p {
+    @apply text-sm
+  }
+}
