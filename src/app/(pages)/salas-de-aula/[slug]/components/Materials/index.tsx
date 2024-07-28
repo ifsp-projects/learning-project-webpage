@@ -9,7 +9,7 @@ export const Materials: React.FC = () => {
         <h2 className="text-lg font-semibold lg:text-xl">
           Materiais Complementares
         </h2>
-        <div className="grid grid-cols-1 gap-x-2 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
           <MaterialCard type="pdf" />
           <MaterialCard type="excel" />
           <MaterialCard type="word" />
