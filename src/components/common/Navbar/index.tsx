@@ -1,3 +1,4 @@
+import { Sidebar } from '../Sidebar/Sidebar'
 import { DesktopNavbarLayout } from './Desktop'
 import { MobileNavbarLayout } from './Mobile'
 

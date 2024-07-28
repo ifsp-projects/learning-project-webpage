@@ -9,6 +9,7 @@ import { useState } from 'react'
 import { SIDENAV_ITEMS } from '../data'
 
 import { MenuItem } from '..'
+import { Sidebar } from '@/components/common/Sidebar/Sidebar'
 
 
 export const SidebarNavigation: React.FC = () => {
@@ -16,11 +17,7 @@ export const SidebarNavigation: React.FC = () => {
 
   return (
     <div className="ml-6">
-      <HamburgerButton
-        isOpen={isSidebarOpen}
-        onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-        variant="primary"
-      />
+      <Sidebar isSidebarOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen} />
       {isSidebarOpen ? (
         <ModalContainer setShowMenu={setIsSidebarOpen} showMenu={isSidebarOpen}>
           <div className="flex w-full flex-col space-y-6">
