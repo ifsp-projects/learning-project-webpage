@@ -6,13 +6,15 @@ Bem-vindo à nossa Plataforma de Aprendizado! Esta plataforma combina o melhor d
 
 ## 📝 Índice
 
-- [Sobre](#sobre)
-- [Recursos](#recursos)
-- [Instalação](#instalação)
-- [Como Usar](#como-usar)
-- [Contribuição](#contribuição)
-- [Licença](#licença)
-- [Contato](#contato)
+- [📚 Plataforma de Aprendizado](#-plataforma-de-aprendizado)
+  - [📝 Índice](#-índice)
+  - [🌟 Sobre](#-sobre)
+  - [🚀 Recursos](#-recursos)
+  - [💻 Instalação](#-instalação)
+  - [📚 Como Usar](#-como-usar)
+  - [🤝 Contribuição](#-contribuição)
+  - [📄 Licença](#-licença)
+  - [📧 Contato](#-contato)
 
 ## 🌟 Sobre
 
@@ -39,11 +41,11 @@ Para instalar a plataforma, siga os passos abaixo:
     ```
 3. Instale as dependências:
     ```sh
-    npm install
+    yarn install
     ```
 4. Inicie a aplicação:
     ```sh
-    npm start
+    yarn dev
     ```
 
 ## 📚 Como Usar
