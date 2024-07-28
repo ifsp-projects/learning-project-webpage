@@ -1,7 +1,5 @@
 import { ButtonCopy } from '@/types/components/button'
 
-import { buttonVariants } from './variance'
-
 type Variants = 'primary' | 'secondary'
 
 export interface Navigation {

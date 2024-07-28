@@ -3,12 +3,12 @@ import { IconProps } from '@/types/components/icons'
 export const InfoIcon: React.FC<IconProps> = props => {
   return (
     <svg
-      id="Layer_1"
-      data-name="Layer 1"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      stroke-width="1.5"
       color="currentColor"
+      data-name="Layer 1"
+      id="Layer_1"
+      strokeWidth="1.5"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
       <defs>
@@ -27,15 +27,15 @@ export const InfoIcon: React.FC<IconProps> = props => {
       <line
         className="cls-6374f8d9b67f094e4896c63c-1"
         x1="10.09"
-        y1="16.77"
         x2="13.91"
+        y1="16.77"
         y2="16.77"
       ></line>
       <line
         className="cls-6374f8d9b67f094e4896c63c-1"
         x1="11.05"
-        y1="7.23"
         x2="12.95"
+        y1="7.23"
         y2="7.23"
       ></line>
     </svg>

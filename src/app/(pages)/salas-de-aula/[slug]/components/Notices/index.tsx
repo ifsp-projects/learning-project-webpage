@@ -1,7 +1,8 @@
 import { Container } from '@/components/toolkit/Container'
+
 import { MESSAGES } from './data'
-import { Message } from './types'
 import { MessageItem } from './MessageItem'
+import { Message } from './types'
 
 // TODO = MELHORIAS VISUAIS NESSA SECTION (ESSA É PROVISÓRIA)
 export const Notices: React.FC = () => {
@@ -11,7 +12,7 @@ export const Notices: React.FC = () => {
         <h2 className="text-lg font-semibold lg:text-xl">Avisos Gerais</h2>
         <ul className="flex flex-col gap-4">
           {MESSAGES.map((message: Message, index: number) => (
-            <MessageItem message={message} key={`message-${index}`} />
+            <MessageItem key={`message-${index}`} message={message} />
           ))}
         </ul>
       </section>

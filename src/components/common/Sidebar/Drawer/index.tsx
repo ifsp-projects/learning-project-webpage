@@ -1,10 +1,8 @@
 import { Fragment } from 'react'
 
-
 import { Transition } from '@headlessui/react'
-import { DrawerProps } from './types'
 
-import { CgCloseR } from 'react-icons/cg'
+import { DrawerProps } from './types'
 
 export const Drawer: React.FC<DrawerProps> = ({
   children,
@@ -32,7 +30,7 @@ export const Drawer: React.FC<DrawerProps> = ({
             (event.target as HTMLDivElement).id === 'side-menu-backdrop' &&
             handleCloseDrawer()
           }
-          className="fixed left-0 max-w-xl top-0 z-10 h-screen w-screen bg-slate-900/40"
+          className="fixed left-0 top-0 z-10 h-screen w-screen max-w-xl bg-slate-900/40"
           id="side-menu-backdrop"
           tabIndex={-1}
         />
@@ -47,11 +45,10 @@ export const Drawer: React.FC<DrawerProps> = ({
         leaveTo="opacity-0 -translate-x-full"
       >
         <div
-          className={`drawer-toolkit fixed left-0 py-56 pr-88 w-full max-w-xl overflow-hidden top-0 z-50 h-full min-w-80  bg-white shadow-xl ${
+          className={`drawer-toolkit pr-88 fixed left-0 top-0 z-50 h-full w-full min-w-80 max-w-xl overflow-hidden bg-white py-56 shadow-xl ${
             fullScreenOnMobile ? 'w-full lg:w-auto' : ''
           }`}
         >
-
           {children}
         </div>
       </Transition.Child>

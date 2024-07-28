@@ -1,4 +1,5 @@
 import { HiOutlineDocumentText } from 'react-icons/hi2'
+
 import { ActivityItemProps } from './types'
 
 export const ActivityItem: React.FC<ActivityItemProps> = ({ activity }) => {

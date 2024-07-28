@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export const getIpAdress = (req: {
   headers: { [x: string]: any }
   socket: { remoteAddress: any }

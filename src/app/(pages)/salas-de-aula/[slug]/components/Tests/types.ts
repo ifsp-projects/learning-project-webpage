@@ -1,8 +1,8 @@
 export interface Test {
-  title: string
-  description: string
-  highscore: number | null
   class: string
   date: string
+  description: string
+  highscore: number | null
   status: boolean
+  title: string
 }

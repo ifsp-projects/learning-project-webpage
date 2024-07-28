@@ -17,7 +17,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
       />
 
       {isSidebarOpen ? (
-        <Drawer setIsOpen={setIsSidebarOpen} isOpen={isSidebarOpen}>
+        <Drawer isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen}>
           testando
         </Drawer>
       ) : null}

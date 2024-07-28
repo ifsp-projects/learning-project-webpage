@@ -1,6 +1,6 @@
 export interface Message {
-  message: string
   creator: string
+  message: string
 }
 
 export interface MessageItemProps {
