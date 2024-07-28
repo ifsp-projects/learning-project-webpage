@@ -1,8 +1,5 @@
 export interface Message {
   creator: string
-  message: string
-}
-
-export interface MessageItemProps {
-  message: Message
+  description: string
+  title: string
 }
