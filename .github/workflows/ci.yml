@@ -22,6 +22,10 @@ jobs:
         with:
           node-version: 20.x
 
+      - name: Install Yarn
+        run: |
+          npm install yarn
+
       - name: Install dependencies
         run: |
           yarn install
