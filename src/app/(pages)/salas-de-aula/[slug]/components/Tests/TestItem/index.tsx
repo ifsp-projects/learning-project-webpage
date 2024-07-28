@@ -2,7 +2,7 @@ import { TestItemProps } from './types'
 
 export const TestItem: React.FC<TestItemProps> = ({ test }) => {
   return (
-    <div className="flex cursor-pointer flex-col gap-4 border-l-2 border-slate-300 bg-white pl-2 transition-all duration-300 hover:bg-slate-100 lg:gap-6">
+    <div className="flex cursor-pointer flex-col gap-4 border-l-2 border-slate-300 bg-white p-4 pl-2 transition-all duration-300 hover:bg-slate-100 lg:gap-6">
       <article className="flex flex-col gap-2">
         <h2 className="line-clamp-1 text-sm font-semibold">{test.title}</h2>
         <p className="line-clamp-3 text-sm">{test.description}</p>
