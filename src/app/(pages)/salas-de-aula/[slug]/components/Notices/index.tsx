@@ -3,6 +3,7 @@ import { MESSAGES } from './data'
 import { Message } from './types'
 import { MessageItem } from './MessageItem'
 
+// TODO = MELHORIAS VISUAIS NESSA SECTION (ESSA É PROVISÓRIA)
 export const Notices: React.FC = () => {
   return (
     <Container as="section" data-cid="classroom-notices">

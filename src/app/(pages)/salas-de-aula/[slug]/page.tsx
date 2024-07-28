@@ -6,8 +6,19 @@ import { Notices } from './components/Notices'
 import { Tests } from './components/Tests'
 import { Materials } from './components/Materials'
 import { ClassroomNavbar } from './components/ClassroomNavbar'
+import { getMetaData } from '@/utils/getters/getMetaData'
+import { ClassroomProps } from './types'
 
-const Page: NextPage = () => {
+export async function generateMetadata({ params: { slug } }: ClassroomProps) {
+  return getMetaData({
+    title: `Sala de Aula - ${slug}`,
+    description:
+      'Veja as suas atividades, avaliações, materiais complementares, avisos e muitos mais dentro da página de sala de aula',
+    opengraph: ''
+  })
+}
+
+const Page: NextPage<ClassroomProps> = ({ params: { slug } }) => {
   return (
     <>
       <ClassroomNavbar />
