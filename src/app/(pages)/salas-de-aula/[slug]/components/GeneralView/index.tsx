@@ -1,14 +1,14 @@
 import { Container } from '@/components/toolkit/Container'
+
 import { CourseDescription } from './CourseDescription'
 import { COURSE_DESCRIPTION } from './data'
-import Image from 'next/image'
 
 // TODO = MELHORIAS VISUAIS NESSA SECTION (ESSA É PROVISÓRIA)
 export const GeneralView: React.FC = () => {
   return (
     <Container as="section" data-cid="classroom-general-view">
       <section className="flex w-full flex-1 flex-col-reverse gap-8 rounded-sm border border-slate-300 bg-white px-4 py-8 lg:flex-row">
-        <article className="w-full flex flex-col gap-4">
+        <article className="flex w-full flex-col gap-4">
           <h2 className="text-lg font-semibold text-teal-600 lg:text-xl">
             Algoritmos e Programação
           </h2>

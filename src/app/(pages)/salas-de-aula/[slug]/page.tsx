@@ -1,12 +1,14 @@
-import Footer from '@/components/common/Footer'
 import { NextPage } from 'next'
-import { GeneralView } from './components/GeneralView'
+
+import Footer from '@/components/common/Footer'
+import { getMetaData } from '@/utils/getters/getMetaData'
+
 import { Activities } from './components/Activities'
+import { ClassroomNavbar } from './components/ClassroomNavbar'
+import { GeneralView } from './components/GeneralView'
+import { Materials } from './components/Materials'
 import { Notices } from './components/Notices'
 import { Tests } from './components/Tests'
-import { Materials } from './components/Materials'
-import { ClassroomNavbar } from './components/ClassroomNavbar'
-import { getMetaData } from '@/utils/getters/getMetaData'
 import { ClassroomProps } from './types'
 
 export async function generateMetadata({ params: { slug } }: ClassroomProps) {

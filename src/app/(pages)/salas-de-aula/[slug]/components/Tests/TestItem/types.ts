@@ -1,6 +1,5 @@
-import { Test } from "../types";
+import { Test } from '../types'
 
 export interface TestItemProps {
   test: Test
 }
-

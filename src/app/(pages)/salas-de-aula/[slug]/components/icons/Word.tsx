@@ -3,8 +3,8 @@ import { IconProps } from '@/types/components/icons'
 export const WordIcon: React.FC<IconProps> = props => {
   return (
     <svg
-      viewBox="0 0 3600 3600"
       fill="none"
+      viewBox="0 0 3600 3600"
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >

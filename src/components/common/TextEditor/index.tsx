@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client'
 
 import React, { useRef } from 'react'
@@ -12,11 +13,6 @@ type TextEditorProps = {
 
 const TextEditor = ({ value, setValue }: TextEditorProps) => {
   const editorRef = useRef<any>(null)
-  const log = () => {
-    if (editorRef.current) {
-      console.log(editorRef.current.getContent())
-    }
-  }
   return (
     <>
       <Editor

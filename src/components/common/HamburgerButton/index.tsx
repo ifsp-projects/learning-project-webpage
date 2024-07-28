@@ -1,5 +1,4 @@
 import { HamburgerButtonProps } from './types'
-import { buttonVariants } from './variance'
 
 export const HamburgerButton: React.FC<HamburgerButtonProps> = ({
   isOpen,

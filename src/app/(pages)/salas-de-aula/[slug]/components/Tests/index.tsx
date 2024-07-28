@@ -1,7 +1,8 @@
 import { Container } from '@/components/toolkit/Container'
+
 import { AVAILABLE_TESTS } from './data'
-import { Test } from './types'
 import { TestItem } from './TestItem'
+import { Test } from './types'
 
 export const Tests: React.FC = () => {
   return (

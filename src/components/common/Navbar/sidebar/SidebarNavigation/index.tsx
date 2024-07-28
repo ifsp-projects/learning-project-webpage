@@ -1,23 +1,26 @@
 'use client'
 
-import { HamburgerButton } from '@/components/common/HamburgerButton'
+import Link from 'next/link'
+
 import ModalContainer from '@/components/common/ModalContainer'
 
-import Link from 'next/link'
 import { useState } from 'react'
+
+import { Sidebar } from '@/components/common/Sidebar/Sidebar'
 
 import { SIDENAV_ITEMS } from '../data'
 
 import { MenuItem } from '..'
-import { Sidebar } from '@/components/common/Sidebar/Sidebar'
-
 
 export const SidebarNavigation: React.FC = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false)
 
   return (
     <div className="ml-6">
-      <Sidebar isSidebarOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen} />
+      <Sidebar
+        isSidebarOpen={isSidebarOpen}
+        setIsSidebarOpen={setIsSidebarOpen}
+      />
       {isSidebarOpen ? (
         <ModalContainer setShowMenu={setIsSidebarOpen} showMenu={isSidebarOpen}>
           <div className="flex w-full flex-col space-y-6">
