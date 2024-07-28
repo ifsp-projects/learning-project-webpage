@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📚 Plataforma de Aprendizado
 
-## Getting Started
+![Banner](https://via.placeholder.com/1200x300?text=Plataforma+de+Aprendizado&bg=green&fg=black)
 
-First, run the development server:
+Bem-vindo à nossa Plataforma de Aprendizado! Esta plataforma combina o melhor do Teams e Moodle para fornecer uma experiência de aprendizado integrada e eficiente.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📝 Índice
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Sobre](#sobre)
+- [Recursos](#recursos)
+- [Instalação](#instalação)
+- [Como Usar](#como-usar)
+- [Contribuição](#contribuição)
+- [Licença](#licença)
+- [Contato](#contato)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🌟 Sobre
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Esta plataforma foi desenvolvida para facilitar o ensino e a aprendizagem em ambientes escolares e corporativos. Com uma interface intuitiva e ferramentas poderosas, você pode gerenciar cursos, realizar avaliações e colaborar com colegas de forma eficaz.
 
-## Learn More
+## 🚀 Recursos
 
-To learn more about Next.js, take a look at the following resources:
+- **Gestão de Cursos**: Crie e gerencie cursos com facilidade.
+- **Avaliações e Notas**: Realize avaliações e acompanhe o desempenho dos alunos.
+- **Colaboração**: Ferramentas de chat, fóruns e grupos de estudo.
+- **Integração**: Integra-se com outras ferramentas populares de aprendizado.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial
+## 💻 Instalação
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Para instalar a plataforma, siga os passos abaixo:
 
-## Deploy on Vercel
+1. Clone o repositório:
+    ```sh
+    git clone https://github.com/usuario/plataforma-de-aprendizado.git
+    ```
+2. Navegue até o diretório do projeto:
+    ```sh
+    cd plataforma-de-aprendizado
+    ```
+3. Instale as dependências:
+    ```sh
+    npm install
+    ```
+4. Inicie a aplicação:
+    ```sh
+    npm start
+    ```
 
-The easiest way to deploy your Next.js app is to use the: [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📚 Como Usar
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details
+Após a instalação, você pode acessar a plataforma em `http://localhost:3000`. A partir daí, siga estas etapas:
+
+1. **Criar uma Conta**: Registre-se como professor ou aluno.
+2. **Configurar o Perfil**: Complete suas informações de perfil.
+3. **Criar ou Participar de Cursos**: Professores podem criar cursos e alunos podem se inscrever nos cursos disponíveis.
+4. **Interagir e Aprender**: Utilize as ferramentas de chat, fóruns e avaliações para um aprendizado colaborativo.
+
+## 🤝 Contribuição
+
+Contribuições são bem-vindas! Siga os passos abaixo para contribuir:
+
+1. Faça um fork do projeto.
+2. Crie uma nova branch:
+    ```sh
+    git checkout -b feature/nova-funcionalidade
+    ```
+3. Faça commit das suas alterações:
+    ```sh
+    git commit -m 'Adiciona nova funcionalidade'
+    ```
+4. Envie para o branch original:
+    ```sh
+    git push origin feature/nova-funcionalidade
+    ```
+5. Abra um Pull Request.
+
+## 📄 Licença
+
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## 📧 Contato
+
+Para dúvidas, sugestões ou suporte, entre em contato pelo e-mail: [projetinhoifsp@gmail.com](mailto:projetinhoifsp@gmail.com)
+
+---
