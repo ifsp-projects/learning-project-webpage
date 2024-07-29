@@ -20,7 +20,7 @@
     "cloudinary": "^2.2.0",
     "clsx": "^2.1.1",
     "cookies-next": "^4.2.1",
-    "framer-motion": "^11.3.18",
+    "framer-motion": "^11.3.19",
     "highcharts": "^11.4.5",
     "highcharts-react-official": "^3.2.1",
     "jsonwebtoken": "^9.0.2",
