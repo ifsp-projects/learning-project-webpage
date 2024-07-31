@@ -14,7 +14,7 @@ export default function RootLayout({
       <head>
         <GTMInjection />
       </head>
-      <body className="selection:bg-teal-100 selection:text-teal-900">
+      <body className="text-slate-700 selection:bg-teal-100 selection:text-teal-900">
         <ToastMessage />
         <Navbar />
         {children}
