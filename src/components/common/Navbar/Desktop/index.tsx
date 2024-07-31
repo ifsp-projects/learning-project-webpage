@@ -6,7 +6,7 @@ import { IoSettingsSharp } from 'react-icons/io5'
 
 import { Container } from '@/components/toolkit/Container'
 
-import { SidebarNavigation } from '../Sidebar/SidebarNavigation'
+import { SidebarNavigation } from '../sidebar/SidebarNavigation'
 
 export const DesktopNavbarLayout: React.FC = () => {
   return (
