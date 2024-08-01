@@ -38,7 +38,7 @@
     "react-toastify": "^10.0.5",
     "swiper": "^11.1.7",
     "tailwind-merge": "^2.4.0",
-    "three": "^0.167.0",
+    "three": "^0.167.1",
     "tinymce": "^7.2.1",
     "yup": "^1.4.0"
   },
