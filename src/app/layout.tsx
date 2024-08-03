@@ -17,6 +17,7 @@ export default function RootLayout({
       <body className="text-slate-700 selection:bg-teal-100 selection:text-teal-900">
         <ToastMessage />
         <Navbar />
+        testando novo sistema de commit
         {children}
       </body>
     </html>
