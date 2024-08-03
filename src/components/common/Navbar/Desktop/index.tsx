@@ -13,9 +13,9 @@ export const DesktopNavbarLayout: React.FC = () => {
     <Container
       className="hidden w-full px-12 py-4 lg:block"
       data-cid="desktop-navbar"
-      wrapperClassName="border-b border-slate-100"
+      wrapperClassName="border-b border-slate-100 bg-white"
     >
-      <nav className="flex w-full items-center gap-4 text-white">
+      <nav className="flex w-full items-center gap-4">
         <SidebarNavigation />
         <div className="flex w-full gap-4">
           <div className="relative flex w-full">
