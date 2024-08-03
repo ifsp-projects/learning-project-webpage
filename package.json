@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "commit": "git-cz",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@headlessui/react": "^2.1.1",
@@ -70,5 +72,25 @@
     "sass": "^1.69.5",
     "tailwindcss": "^3.4.7",
     "typescript": "^5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --config ./prettier.config.js --write"
+    ],
+    "**/*.{css,scss,md,html,json}": [
+      "prettier --config ./prettier.config.js --write"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
