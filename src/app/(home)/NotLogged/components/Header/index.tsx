@@ -2,6 +2,7 @@ import Image from 'next/image'
 
 import { Button } from '@/components/common/Button'
 import { Container } from '@/components/toolkit/Container'
+import Link from 'next/link'
 
 export const Header: React.FC = () => {
   return (
@@ -23,9 +24,12 @@ export const Header: React.FC = () => {
             inovadora. Simplifique suas operações e otimize a administração
             educacional.
           </p>
-          <Button className="mt-4 !rounded-full lg:mt-8">
+          <Link
+            href="/quem-somos"
+            className="w-auto max-w-fit rounded-sm bg-emerald-600 mt-4 px-4 py-2 text-sm text-white transition-all duration-300 hover:brightness-105"
+          >
             Quero saber mais
-          </Button>
+          </Link>
         </article>
         <figure className="flex w-full justify-center">
           <Image
