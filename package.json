@@ -19,7 +19,7 @@
     "axios": "^1.7.3",
     "bcryptjs": "^2.4.3",
     "class-variance-authority": "^0.7.0",
-    "cloudinary": "^2.2.0",
+    "cloudinary": "^2.4.0",
     "clsx": "^2.1.1",
     "cookies-next": "^4.2.1",
     "framer-motion": "^11.3.21",
