@@ -7,15 +7,16 @@ import { IoSettingsSharp } from 'react-icons/io5'
 import { Container } from '@/components/toolkit/Container'
 
 import { SidebarNavigation } from '../sidebar/SidebarNavigation'
+import Link from 'next/link'
 
 export const DesktopNavbarLayout: React.FC = () => {
   return (
     <Container
       className="hidden w-full px-12 py-4 lg:block"
       data-cid="desktop-navbar"
-      wrapperClassName="border-b border-slate-100"
+      wrapperClassName="border-b border-slate-100 bg-white"
     >
-      <nav className="flex w-full items-center gap-4 text-white">
+      <nav className="flex w-full items-center gap-4">
         <SidebarNavigation />
         <div className="flex w-full gap-4">
           <div className="relative flex w-full">
@@ -33,21 +34,21 @@ export const DesktopNavbarLayout: React.FC = () => {
         </div>
         <div className="flex w-full items-center justify-end gap-6">
           <FaBell className="cursor-pointer" fill="#334155" size={20} />
-          <BsCalendar3 className="cursor-pointer" fill="#334155" size={20} />
+          {/* <BsCalendar3 className="cursor-pointer" fill="#334155" size={20} />
           <IoSettingsSharp
             className="cursor-pointer"
             fill="#334155"
             size={20}
-          />
-          <figure>
+          /> */}
+          <Link href="/perfil" className='group overflow-hidden'>
             <Image
               alt="undefined-profile-picture"
-              className="cursor-pointer rounded-full"
+              className="cursor-pointer rounded-full transition-all duration-300 group-hover:brightness-95"
               height={35}
               src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
               width={35}
             />
-          </figure>
+          </Link>
         </div>
       </nav>
     </Container>
