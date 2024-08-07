@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import { Button } from '@/components/common/Button'
+import { Anchor } from '@/components/toolkit/Anchor'
 import { Container } from '@/components/toolkit/Container'
 
 export const Header: React.FC = () => {
@@ -12,7 +12,7 @@ export const Header: React.FC = () => {
     >
       <div className="mx-auto flex w-full flex-col gap-20 lg:flex-row lg:justify-between lg:gap-12">
         <article className="flex w-full flex-col items-center gap-4 lg:items-start">
-          <p className="max-w-[145px] border-teal-600 pb-2 text-sm font-medium text-teal-600 lg:border-b-[1.6px] lg:text-base">
+          <p className="max-w-[145px] border-green-600 pb-2 text-sm font-medium text-green-600 lg:border-b-[1.6px] lg:text-base">
             Learning Platform
           </p>
           <h1 className="text-center text-2xl font-semibold lg:text-left lg:text-4xl">
@@ -23,9 +23,9 @@ export const Header: React.FC = () => {
             inovadora. Simplifique suas operações e otimize a administração
             educacional.
           </p>
-          <Button className="mt-4 !rounded-full lg:mt-8">
+          <Anchor className="mt-4 lg:mt-8" href="#">
             Quero saber mais
-          </Button>
+          </Anchor>
         </article>
         <figure className="flex w-full justify-center">
           <Image
