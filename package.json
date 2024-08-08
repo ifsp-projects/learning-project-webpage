@@ -70,7 +70,7 @@
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-svg-jsx": "^1.2.2",
-    "eslint-plugin-unused-imports": "^3.0.0",
+    "eslint-plugin-unused-imports": "^4.1.2",
     "postcss": "^8",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
