@@ -47,9 +47,9 @@
   "devDependencies": {
     "@commitlint/cli": "^19.4.0",
     "@commitlint/config-conventional": "^17.7.0",
-    "@types/pdfmake": "^0.2.9",
     "@types/bcryptjs": "^2.4.6",
     "@types/node": "^22.1.0",
+    "@types/pdfmake": "^0.2.9",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@types/yup": "^0.32.0",
@@ -74,6 +74,7 @@
     "postcss": "^8",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
+    "postcss": "^8",
     "prettier-plugin-tailwindcss": "^0.6.5",
     "sass": "^1.69.5",
     "tsup": "^8.0.1",
