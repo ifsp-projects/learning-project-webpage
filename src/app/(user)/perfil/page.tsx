@@ -1,9 +1,10 @@
 import { NextPage } from 'next'
 
 import Footer from '@/components/common/Footer'
+import { getMetaData } from '@/utils/getters/getMetaData'
+
 import { Header } from './components/Header'
 import { ProfileDetails } from './components/ProfileDetails'
-import { getMetaData } from '@/utils/getters/getMetaData'
 
 export async function generateMetadata() {
   return getMetaData({

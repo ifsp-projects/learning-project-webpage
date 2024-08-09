@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import { Button } from '@/components/common/Button'
+import { Anchor } from '@/components/toolkit/Anchor'
 import { Container } from '@/components/toolkit/Container'
 
 export const AboutUs: React.FC = () => {
@@ -12,7 +12,7 @@ export const AboutUs: React.FC = () => {
       wrapperClassName="bg-slate-50"
     >
       <article className="mx-auto flex max-w-xl flex-col items-center gap-2">
-        <p className="text-sm font-medium text-teal-600">About us</p>
+        <p className="text-sm font-medium text-green-600">About us</p>
         <h1 className="text-2xl font-semibold lg:text-4xl">Quem somos?</h1>
       </article>
       <div className="flex w-full flex-col-reverse justify-between gap-8 lg:flex-row lg:gap-12">
@@ -49,13 +49,13 @@ export const AboutUs: React.FC = () => {
           </p>
           <div className="flex h-auto w-full items-center justify-between gap-4 self-stretch">
             <div className="h-full w-full rounded-sm border border-slate-300 bg-white p-4">
-              <p className="text-lg font-semibold text-teal-600 lg:text-2xl">
+              <p className="text-lg font-semibold text-green-600 lg:text-2xl">
                 10%
               </p>
               <p>de alguma coisa de benefício</p>
             </div>
             <div className="h-full w-full rounded-sm border border-slate-300 bg-white p-4">
-              <p className="text-lg font-semibold text-teal-600 lg:text-2xl">
+              <p className="text-lg font-semibold text-green-600 lg:text-2xl">
                 10%
               </p>
               <p>de alguma coisa de benefício</p>
@@ -67,7 +67,9 @@ export const AboutUs: React.FC = () => {
             qui repellendus odio, accusamus ratione veritatis consequatur dicta
             maiores suscipit.
           </p>
-          <Button className="mx-auto mt-4 lg:mx-0">Quero saber mais</Button>
+          <Anchor className="mx-auto mt-4 lg:mx-0" href="#">
+            Quero saber mais
+          </Anchor>
         </article>
       </div>
     </Container>

@@ -12,7 +12,7 @@ export const ClassroomNavbar: React.FC = () => {
       <ul className="mx-auto flex w-full max-w-3xl items-center justify-between">
         {CLASSROOM_NAVBAR_LINKS.map((link: string, index: number) => (
           <li
-            className="w-full cursor-pointer border-b-2 border-transparent pb-2 text-center text-sm transition-all duration-300 first:border-teal-600 first:font-semibold first:text-teal-600 hover:text-teal-600"
+            className="w-full cursor-pointer border-b-2 border-transparent pb-2 text-center text-sm transition-all duration-300 first:border-green-600 first:font-semibold first:text-green-600 hover:text-green-600"
             key={`${link}-${index}`}
           >
             {link}

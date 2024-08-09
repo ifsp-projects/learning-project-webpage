@@ -3,10 +3,10 @@ import { IconProps } from '@/types/components/icons'
 export const EmptyList: React.FC<IconProps> = props => {
   return (
     <svg
+      className="w-8 text-slate-500"
       fill="none"
       viewBox="0 0 48 48"
       xmlns="http://www.w3.org/2000/svg"
-      className="w-8 text-slate-500"
       {...props}
     >
       <path

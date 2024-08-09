@@ -1,5 +1,5 @@
-import { EmptyList } from "../../icons/EmptyList"
-import { ActivitiesProps } from "./types"
+import { EmptyList } from '../../icons/EmptyList'
+import { ActivitiesProps } from './types'
 
 export const Activities: React.FC<ActivitiesProps> = () => {
   return (
