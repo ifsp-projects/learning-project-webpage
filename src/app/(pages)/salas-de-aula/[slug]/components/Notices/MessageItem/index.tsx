@@ -22,7 +22,7 @@ export const MessageItem: React.FC<MessageItemProps> = ({ copy }) => {
         <p
           className={`flex items-center gap-4 text-left text-base font-normal ${
             isQuestionOpen ? 'font-medium' : ''
-          } transition group-hover:text-teal-600 group-hover:brightness-125`}
+          } transition group-hover:text-green-600 group-hover:brightness-125`}
         >
           <figure className="flex h-auto w-auto items-center justify-center rounded-full bg-slate-100 p-2">
             <FaInfo fill="#64748b" size={12} />
@@ -34,7 +34,7 @@ export const MessageItem: React.FC<MessageItemProps> = ({ copy }) => {
           <ArrowDropdown
             className={`w-4 transition-all ease-in-out ${
               isQuestionOpen
-                ? 'rotate-180 text-teal-600'
+                ? 'rotate-180 text-green-600'
                 : 'rotate-90 text-slate-700'
             }`}
           />

@@ -1,5 +1,5 @@
-import { EmptyList } from "../../icons/EmptyList"
-import { StatisticsProps } from "./types"
+import { EmptyList } from '../../icons/EmptyList'
+import { StatisticsProps } from './types'
 
 export const Statistics: React.FC<StatisticsProps> = () => {
   return (

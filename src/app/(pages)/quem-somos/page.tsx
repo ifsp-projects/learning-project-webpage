@@ -1,13 +1,12 @@
-import Footer from "@/components/common/Footer"
-import { Disclaimer } from "@/components/toolkit/Disclaimer"
-import { getMetaData } from "@/utils/getters/getMetaData"
-import { NextPage } from "next"
+import { NextPage } from 'next'
+
+import Footer from '@/components/common/Footer'
+import { getMetaData } from '@/utils/getters/getMetaData'
 
 export async function generateMetadata() {
   return getMetaData({
     title: '',
-    description:
-      '',
+    description: '',
     opengraph: ''
   })
 }
@@ -15,9 +14,7 @@ export async function generateMetadata() {
 const Page: NextPage = () => {
   return (
     <>
-      <main>
-        page
-      </main>
+      <main>page</main>
       <Footer />
     </>
   )

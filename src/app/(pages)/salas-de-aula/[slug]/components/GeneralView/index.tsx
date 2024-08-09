@@ -9,7 +9,7 @@ export const GeneralView: React.FC = () => {
     <Container as="section" data-cid="classroom-general-view">
       <section className="flex w-full flex-1 flex-col-reverse gap-8 rounded-sm border border-slate-300 bg-white px-4 py-8 lg:flex-row">
         <article className="flex w-full flex-col gap-4">
-          <h2 className="text-lg font-semibold text-teal-600 lg:text-xl">
+          <h2 className="text-lg font-semibold text-green-600 lg:text-xl">
             Algoritmos e Programação
           </h2>
           <CourseDescription htmlContent={COURSE_DESCRIPTION} />

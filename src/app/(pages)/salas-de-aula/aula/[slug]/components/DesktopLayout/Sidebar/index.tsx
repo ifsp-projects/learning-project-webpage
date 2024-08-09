@@ -25,7 +25,7 @@ export const Sidebar: React.FC = () => {
         <ul className="flex flex-wrap items-center gap-3">
           {TAGS.map((tag: string, index: number) => (
             <li
-              className="rounded-sm border border-teal-600 px-4 py-1 text-xs text-teal-600"
+              className="rounded-sm border border-green-600 px-4 py-1 text-xs text-green-600"
               key={`${tag}-${index}`}
             >
               {tag}
