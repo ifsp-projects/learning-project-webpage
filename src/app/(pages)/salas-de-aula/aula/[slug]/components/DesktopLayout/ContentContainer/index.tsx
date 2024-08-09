@@ -22,11 +22,11 @@ export const ContentContainer: React.FC = () => {
           <article className="flex w-full items-center">
             <p className="text-sm">
               Professor:{' '}
-              <span className="text-sm text-teal-600">Edivaldo Serafim</span>
+              <span className="text-sm text-green-600">Edivaldo Serafim</span>
             </p>
           </article>
           <div className="flex w-full justify-end">
-            <button className="rounded-sm bg-teal-600 px-4 py-2 text-sm text-white">
+            <button className="rounded-sm bg-green-600 px-4 py-2 text-sm text-white">
               Baixar Aula
             </button>
           </div>

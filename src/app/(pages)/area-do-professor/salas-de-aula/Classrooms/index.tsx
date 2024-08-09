@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 
-import { Button } from '@/components/common/Button'
+import { Button } from '@/components/toolkit/Button'
 import { Container } from '@/components/toolkit/Container'
 import { SeeLessButton } from '@/components/toolkit/SeeLessButton'
 import SeeMoreButton from '@/components/toolkit/SeeMoreButton'

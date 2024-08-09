@@ -1,8 +1,7 @@
 import Image from 'next/image'
 
-import { Button } from '@/components/common/Button'
+import { Anchor } from '@/components/toolkit/Anchor'
 import { Container } from '@/components/toolkit/Container'
-import Link from 'next/link'
 
 export const Header: React.FC = () => {
   return (
@@ -13,7 +12,7 @@ export const Header: React.FC = () => {
     >
       <div className="mx-auto flex w-full flex-col gap-20 lg:flex-row lg:justify-between lg:gap-12">
         <article className="flex w-full flex-col items-center gap-4 lg:items-start">
-          <p className="max-w-[145px] border-teal-600 pb-2 text-sm font-medium text-teal-600 lg:border-b-[1.6px] lg:text-base">
+          <p className="max-w-[145px] border-green-600 pb-2 text-sm font-medium text-green-600 lg:border-b-[1.6px] lg:text-base">
             Learning Platform
           </p>
           <h1 className="text-center text-2xl font-semibold lg:text-left lg:text-4xl">
@@ -24,12 +23,9 @@ export const Header: React.FC = () => {
             inovadora. Simplifique suas operações e otimize a administração
             educacional.
           </p>
-          <Link
-            href="/quem-somos"
-            className="w-auto max-w-fit rounded-sm bg-emerald-600 mt-4 px-4 py-2 text-sm text-white transition-all duration-300 hover:brightness-105"
-          >
+          <Anchor className="mt-4 lg:mt-8" href="/quem-somos">
             Quero saber mais
-          </Link>
+          </Anchor>
         </article>
         <figure className="flex w-full justify-center">
           <Image

@@ -1,7 +1,7 @@
 import { useForm } from 'react-hook-form'
 import { toast } from 'react-toastify'
 
-import { Button } from '@/components/common/Button'
+import { Button } from '@/components/toolkit/Button'
 import { InputField } from '@/components/toolkit/Fields/InputField'
 import { SelectField } from '@/components/toolkit/Fields/SelectField'
 import { Spin } from '@/components/toolkit/Spin'

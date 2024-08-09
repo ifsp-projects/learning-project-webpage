@@ -1,7 +1,7 @@
-import Footer from '@/components/common/Footer'
-import { Disclaimer } from '@/components/toolkit/Disclaimer'
-import { getMetaData } from '@/utils/getters/getMetaData'
 import { NextPage } from 'next'
+
+import Footer from '@/components/common/Footer'
+import { getMetaData } from '@/utils/getters/getMetaData'
 
 export async function generateMetadata() {
   return getMetaData({
