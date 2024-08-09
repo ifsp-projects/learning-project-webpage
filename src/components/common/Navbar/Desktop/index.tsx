@@ -1,13 +1,9 @@
 import Image from 'next/image'
-import { BsCalendar3 } from 'react-icons/bs'
+import Link from 'next/link'
 import { FaBell } from 'react-icons/fa'
 import { IoIosSearch } from 'react-icons/io'
-import { IoSettingsSharp } from 'react-icons/io5'
 
 import { Container } from '@/components/toolkit/Container'
-
-import { SidebarNavigation } from '../sidebar/SidebarNavigation'
-import Link from 'next/link'
 
 export const DesktopNavbarLayout: React.FC = () => {
   return (
@@ -17,7 +13,7 @@ export const DesktopNavbarLayout: React.FC = () => {
       wrapperClassName="border-b border-slate-100 bg-white"
     >
       <nav className="flex w-full items-center gap-4">
-        <SidebarNavigation />
+        {/* <SidebarNavigation /> */}
         <div className="flex w-full gap-4">
           <div className="relative flex w-full">
             <figure className="pointer-events-none absolute left-4 top-1/2 z-10 w-5 -translate-y-1/2 text-slate-200">
@@ -40,7 +36,7 @@ export const DesktopNavbarLayout: React.FC = () => {
             fill="#334155"
             size={20}
           /> */}
-          <Link href="/perfil" className='group overflow-hidden'>
+          <Link className="group overflow-hidden" href="/perfil">
             <Image
               alt="undefined-profile-picture"
               className="cursor-pointer rounded-full transition-all duration-300 group-hover:brightness-95"
