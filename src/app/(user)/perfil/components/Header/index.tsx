@@ -10,7 +10,7 @@ import { LockedAchievement } from '@/assets/achievements/LockedAchievement'
 import { MoreThanAYear } from '@/assets/achievements/MoreThanAYear'
 import { Pioneer } from '@/assets/achievements/Pioneer'
 import { Punctual } from '@/assets/achievements/Punctual'
-import { Button } from '@/components/common/Button'
+import { Button } from '@/components/toolkit/Button'
 
 import { HeaderProps } from './types'
 
