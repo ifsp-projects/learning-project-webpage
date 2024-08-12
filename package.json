@@ -39,7 +39,7 @@
     "react-icons": "^5.2.1",
     "react-toastify": "^10.0.5",
     "swiper": "^11.1.9",
-    "tailwind-merge": "^2.4.0",
+    "tailwind-merge": "^2.5.2",
     "three": "^0.167.1",
     "tinymce": "^7.3.0",
     "yup": "^1.4.0"
