@@ -2426,10 +2426,10 @@ eslint-plugin-svg-jsx@^1.2.2:
   resolved "https://registry.yarnpkg.com/eslint-plugin-svg-jsx/-/eslint-plugin-svg-jsx-1.2.4.tgz#fffe90e4ca257b033b78c53877f2ea3d7e7cbb9e"
   integrity sha512-sClnpIQY9OOxDLpf3JJU/m6Xk11dJqoaSRC5eyAt8Akp86/DNbzO8C6tyr3wjfJnPvgWjisYnEkUTw2m9yG45Q==
 
-eslint-plugin-unused-imports@^4.1.2:
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-unused-imports/-/eslint-plugin-unused-imports-4.1.2.tgz#a1a9c9276869eb5c0a5c993386cfc09b73256bd2"
-  integrity sha512-A/Ypb0DQlDEzIbcoAv87NpLLcG3iwlE0gBEpS9Ud/62v2v3CoO15lZ/WfGyo2Wq7YraWJ2aE0TeHgJcpor6KQQ==
+eslint-plugin-unused-imports@^4.1.3:
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-unused-imports/-/eslint-plugin-unused-imports-4.1.3.tgz#079ef6f51914a981e657b3834935a6a417bf3f45"
+  integrity sha512-lqrNZIZjFMUr7P06eoKtQLwyVRibvG7N+LtfKtObYGizAAGrcqLkc3tDx+iAik2z7q0j/XI3ihjupIqxhFabFA==
 
 eslint-scope@^7.2.2:
   version "7.2.2"
