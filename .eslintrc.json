@@ -24,8 +24,8 @@
   ],
   "rules": {
     "no-useless-constructor": "off",
-    "svg-jsx/camel-case-dash": "error",
     "svg-jsx/camel-case-colon": "error",
+    "svg-jsx/camel-case-dash": "error",
     "svg-jsx/no-style-string": "error",
     "perfectionist/sort-interfaces": "error",
     "perfectionist/sort-jsx-props": [

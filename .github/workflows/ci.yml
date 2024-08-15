@@ -1,4 +1,4 @@
-name: Sandbox Enviroment Test Workflow
+name: "Verify Build And Plan"
 
 on:
   pull_request:
@@ -34,6 +34,10 @@ jobs:
       - name: Docker Build
         run : |
           docker build -t ci -f Dockerfile .
+
+      - name: Linter Formatter
+        run: |
+          yarn lint --fix
 
       - name: Authorization
         run: |
