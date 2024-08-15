@@ -1,4 +1,4 @@
-name: Sandbox Enviroment Test Workflow
+name: "Verify Build And Plan"
 
 on:
   pull_request:
