@@ -7,3 +7,21 @@ declare module 'next-auth' {
     user: User
   }
 }
+
+interface DataLayerEvent {
+  event: string
+}
+
+declare global {
+  interface Window {
+    dataLayer: DataLayerEvent[]
+  }
+}
+
+interface PagesType {
+  [key: string]: {
+    // Define the properties you expect for each page here
+    title?: string
+    description?: string
+  }
+}

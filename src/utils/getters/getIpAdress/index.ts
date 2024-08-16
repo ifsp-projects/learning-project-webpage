@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 export const getIpAdress = (req: {
-  headers: { [x: string]: any }
-  socket: { remoteAddress: any }
+  headers: { [x: string]: string }
+  socket: { remoteAddress: string }
 }) => {
   const forwarded = req.headers['x-forwarded-for']
 

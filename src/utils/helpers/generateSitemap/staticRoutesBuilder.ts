@@ -7,9 +7,9 @@ import { routeBuilder } from './routeBuilder'
 export const staticRoutesBuilder = (locale: string, lastModified: Date) => {
   const routesArray = []
 
-  const processRoutes = (pages: any) => {
-    for (const indexRoute of Object.keys(pages)) {
-      const route = pages[indexRoute]
+  const processRoutes = (pages: string[]) => {
+    for (let index = 0; index < pages.length; index++) {
+      const route = pages[index]
       if (route) {
         const formattedRoute = `${BASE_URL}${route}`
         routesArray.push(routeBuilder(formattedRoute, lastModified, '1.0'))
