@@ -2,9 +2,9 @@
 'use client'
 
 export const animateCSS = async (
-  element: any,
-  animation: any,
-  prefix = 'animate__'
+  element: string,
+  animation: string,
+  prefix?: string
 ) => {
   try {
     const animationName = `${prefix}${animation}`
@@ -24,9 +24,11 @@ export const animateCSS = async (
     await new Promise(resolve => {
       function handleAnimationEnd(event: { stopPropagation: () => void }) {
         event.stopPropagation()
-        node.classList.remove(`${prefix}animated`, animationName)
-        node.removeEventListener('animationend', handleAnimationEnd)
-        resolve('Animation ended')
+        if (node) {
+          node.classList.remove(`${prefix}animated`, animationName)
+          node.removeEventListener('animationend', handleAnimationEnd)
+          resolve('Animation ended')
+        }
       }
 
       node.addEventListener('animationend', handleAnimationEnd, {
