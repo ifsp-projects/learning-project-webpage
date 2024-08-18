@@ -13,7 +13,7 @@ export const credentialsOptions = {
     },
     codeConfirm: { label: 'codeConfirm', type: 'string' }
   },
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
   async authorize(credentials: string) {
     const userData: User =
       (await auth.users.loginUser(credentials)) || ({} as User)

@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { RefObject, useEffect, useMemo, useState } from 'react'
 
 export const useIntersectionObserver = (

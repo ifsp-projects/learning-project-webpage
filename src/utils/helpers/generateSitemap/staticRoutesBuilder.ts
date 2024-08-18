@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/environments/baseUrl'
 
