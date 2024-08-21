@@ -39,6 +39,9 @@ jobs:
         run: |
           yarn lint --fix
 
+      - name: Post NextJS Cache
+        uses: actions/cache@v3
+
       - name: Authorization
         run: |
           echo "Your Pull Request has been authorized successfully! 🥳"
