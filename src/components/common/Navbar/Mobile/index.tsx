@@ -4,7 +4,7 @@ import { IoIosSearch } from 'react-icons/io'
 
 export const MobileNavbarLayout: React.FC = () => {
   return (
-    <nav className="flex w-full justify-between gap-6 bg-slate-50 p-4 lg:hidden">
+    <nav className="fixed flex w-full justify-between gap-6 bg-white p-4 shadow lg:hidden">
       <div className="flex w-full gap-4">
         <div className="relative flex w-full">
           <figure className="pointer-events-none absolute left-4 top-1/2 z-10 w-5 -translate-y-1/2 text-slate-200">
