@@ -7,7 +7,7 @@ export async function generateMetadata() {
   return getMetaData({
     title: 'Página Inicial - Bem-Vindo à nossa plataforma',
     description:
-      'Assista ou lecione aulas dentro de nossa plataforma, com auxilio de diversas ferramentas!',
+      'Assista ou lecione aulas dentro de nossa plataforma, com auxilio nossas ferramentas educacionais!',
     opengraph: ''
   })
 }
