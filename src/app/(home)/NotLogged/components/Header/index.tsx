@@ -9,10 +9,11 @@ export const Header: React.FC = () => {
       as="section"
       className="py-12 lg:py-20"
       data-cid="home-logged-out-header"
+      wrapperClassName="bg-white"
     >
       <div className="mx-auto flex w-full flex-col gap-20 lg:flex-row lg:justify-between lg:gap-12">
         <article className="flex w-full flex-col items-center gap-4 lg:items-start">
-          <p className="max-w-[145px] border-green-600 pb-2 text-sm font-medium text-green-600 lg:border-b-[1.6px] lg:text-base">
+          <p className="max-w-[145px] border-indigo-500 pb-2 text-sm font-medium text-indigo-500 lg:border-b-[1.6px] lg:text-base">
             Learning Platform
           </p>
           <h1 className="text-center text-2xl font-semibold lg:text-left lg:text-4xl">

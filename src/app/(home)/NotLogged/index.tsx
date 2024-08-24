@@ -1,9 +1,11 @@
 import Footer from '@/components/common/Footer'
 
 import { AboutUs } from './components/AboutUs'
-import { Achievements } from './components/Achievements'
 import { Header } from './components/Header'
 import { OurServices } from './components/OurServices'
+import { SuccessCases } from './components/SucccessCases'
+import { WhoUseOurPlatform } from './components/WhoUseOurPlatform'
+import { WhyUseOurPlatform } from './components/WhyUseOurPlatform'
 
 export const NotLogged: React.FC = () => {
   return (
@@ -12,7 +14,9 @@ export const NotLogged: React.FC = () => {
         <Header />
         <OurServices />
         <AboutUs />
-        <Achievements />
+        <WhyUseOurPlatform />
+        <SuccessCases />
+        <WhoUseOurPlatform />
       </main>
       <Footer />
     </>

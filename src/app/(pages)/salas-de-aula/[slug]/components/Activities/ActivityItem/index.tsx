@@ -11,7 +11,7 @@ export const ActivityItem: React.FC<ActivityItemProps> = ({ activity }) => {
         <p className="text-sm font-semibold">
           {activity.title} •{' '}
           <span
-            className={`text-sm font-normal ${activity.status ? 'text-green-600' : 'text-red-600'}`}
+            className={`text-sm font-normal ${activity.status ? 'text-indigo-500' : 'text-red-600'}`}
           >
             {activity.status ? 'Concluída' : 'Pendente'}
           </span>

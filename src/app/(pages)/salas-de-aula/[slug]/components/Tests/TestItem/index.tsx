@@ -13,7 +13,7 @@ export const TestItem: React.FC<TestItemProps> = ({ test }) => {
         </div>
         <div className="flex w-full justify-end">
           <p
-            className={`text-sm ${test.status ? 'text-green-600' : 'text-red-600'}`}
+            className={`text-sm ${test.status ? 'text-indigo-500' : 'text-red-600'}`}
           >
             {test.status ? 'Avaliado' : 'Pendente'}
           </p>

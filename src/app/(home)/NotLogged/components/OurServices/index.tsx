@@ -9,9 +9,10 @@ export const OurServices: React.FC = () => {
       as="section"
       className="flex flex-col gap-8 py-12 lg:gap-16 lg:py-20"
       data-cid="home-logged-out-services"
+      wrapperClassName="bg-white"
     >
       <article className="mx-auto flex max-w-xl flex-col items-center gap-2 lg:gap-4">
-        <p className="text-sm font-medium text-green-600">Nossos Serviços</p>
+        <p className="text-sm font-medium text-indigo-500">Nossos Serviços</p>
         <h1 className="text-2xl font-semibold lg:text-4xl">
           O Que Providenciamos
         </h1>

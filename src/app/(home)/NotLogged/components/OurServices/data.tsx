@@ -31,7 +31,7 @@ export const SERVICES_DATA = [
 ]
 
 export const SERVICES_ICONS: ServicesIconsType = {
-  bulb: <FaRegLightbulb fill="#14b8a6" size={28} />,
-  dashboard: <BsGraphUp fill="#14b8a6" size={28} />,
-  report: <SiAwsorganizations fill="#14b8a6" size={28} />
+  bulb: <FaRegLightbulb fill="#3b82f6" size={28} />,
+  dashboard: <BsGraphUp fill="#3b82f6" size={28} />,
+  report: <SiAwsorganizations fill="#3b82f6" size={28} />
 }
