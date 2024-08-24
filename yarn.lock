@@ -37,25 +37,30 @@
   dependencies:
     regenerator-runtime "^0.14.0"
 
-"@cloudinary-util/types@1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@cloudinary-util/types/-/types-1.1.0.tgz#7de7590bc9adc9f3e5b6f2b51e586864e3224161"
-  integrity sha512-hlaN/+3wulAe+wGJNO2XrtFHKGrjt80F02BJFE4nEucAmv5OVYxRIQg/aroYb56X8jdSAHU1nPw9GRqApYdNog==
+"@cloudinary-util/types@1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@cloudinary-util/types/-/types-1.2.0.tgz#c67ee4c4948236327872239165bf798eeeb899c5"
+  integrity sha512-2Mo5juB1HV+GmVLq2+bU0Yg5FB6r+csbHyDN6njc0AqkEkp+AW+Q6kYbbTYkT7zk3x9tBWfKn3lfR7wUCwowJw==
 
-"@cloudinary-util/url-loader@5.5.0":
-  version "5.5.0"
-  resolved "https://registry.yarnpkg.com/@cloudinary-util/url-loader/-/url-loader-5.5.0.tgz#7d73f37d650f827fc571fa3bd8dfd6d59036b75e"
-  integrity sha512-oFDyeRzvnawhmP1OSnXb/A09LiUyROylpTSfaNgb0eJ4oP1Lc60VMuzJsbsiLVTOf8N5pf7MHlUtM9y/Q9JrUA==
+"@cloudinary-util/types@1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@cloudinary-util/types/-/types-1.3.0.tgz#cbc8dc5e8a74e82f32095c600c01cfe3004299be"
+  integrity sha512-vDSr49G2QJaLlp7zWs8XuiSjKCO8ucCyS1IhrMvXJTUfby+w2eIguPwtJ0ho7pQgUGHnZY+b0aaN7hBTjhHUzw==
+
+"@cloudinary-util/url-loader@5.6.1":
+  version "5.6.1"
+  resolved "https://registry.yarnpkg.com/@cloudinary-util/url-loader/-/url-loader-5.6.1.tgz#1757dc93b19f7933ab29cbf032853238977716fe"
+  integrity sha512-8I2VxzqYmc29elf8EMMiDOJOLivCIXqinF4HJ2ZniPktP2MdKrU+w2QCaEaelTQYeQwRa+ee0zBOtWP1xcNUew==
   dependencies:
-    "@cloudinary-util/types" "1.1.0"
-    "@cloudinary-util/util" "3.1.0"
+    "@cloudinary-util/types" "1.3.0"
+    "@cloudinary-util/util" "3.2.0"
     "@cloudinary/url-gen" "1.15.0"
     zod "^3.22.4"
 
-"@cloudinary-util/util@3.1.0", "@cloudinary-util/util@^3.0.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@cloudinary-util/util/-/util-3.1.0.tgz#007e68b3446ed9967781228f858ee8751470f5fc"
-  integrity sha512-BPy6wLDf+mILZTb8zR44MJxqGp3z8Y9W4DZ0kHC+SJjQYKbYUqcdzFhDKGZNOTAO7pWhkf8E5ViZGy+A0lD44w==
+"@cloudinary-util/util@3.2.0", "@cloudinary-util/util@^3.2.0":
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/@cloudinary-util/util/-/util-3.2.0.tgz#cdfb15ca0f04063203109ffbf3a5bc6de7f94c2b"
+  integrity sha512-VJBqAT3W0HQ9kyMagv+EzXkM/VYR9Ks01ewGxsS8T8b2N0NZFPAhYKeU2H9fOXSl6BVrD6aVYjJZAoT8pfQIyA==
 
 "@cloudinary/transformation-builder-sdk@^1.10.0", "@cloudinary/transformation-builder-sdk@^1.13.0":
   version "1.14.1"
@@ -3916,14 +3921,14 @@ next-auth@^4.24.7:
     preact-render-to-string "^5.1.19"
     uuid "^8.3.2"
 
-next-cloudinary@^6.9.0:
-  version "6.9.0"
-  resolved "https://registry.yarnpkg.com/next-cloudinary/-/next-cloudinary-6.9.0.tgz#5b44cede7300b2123c4f1e2825ce8e429647ddf4"
-  integrity sha512-WVsVT/AY1Zud1PYGojUIQa+Wbndfh/N4pXI8MLHYgboTb9rW6YZOpgIVSJ7calMMYhC2z6xdZOfZPnObEgn4aA==
+next-cloudinary@^6.10.1:
+  version "6.10.1"
+  resolved "https://registry.yarnpkg.com/next-cloudinary/-/next-cloudinary-6.10.1.tgz#e550cb96d237b215b4d51065bf1502091882c317"
+  integrity sha512-ag2+ACnhl8RwYB2IUvdrCBTm+3KFIOVaBbLdrFui3BhCp4oz9HbrztZ9Qc4qu4CxYmDMjC14KFIMomrloxhsxQ==
   dependencies:
-    "@cloudinary-util/types" "1.1.0"
-    "@cloudinary-util/url-loader" "5.5.0"
-    "@cloudinary-util/util" "^3.0.0"
+    "@cloudinary-util/types" "1.2.0"
+    "@cloudinary-util/url-loader" "5.6.1"
+    "@cloudinary-util/util" "^3.2.0"
     "@tsconfig/recommended" "^1.0.7"
 
 next@^14.2.5:
