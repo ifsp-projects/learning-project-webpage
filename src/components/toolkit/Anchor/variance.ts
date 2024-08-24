@@ -8,7 +8,6 @@ export const anchorVariants = cva(
     'cursor-pointer',
     'justify-center',
     'items-center',
-    'font-semibold',
     'px-6',
     'py-2',
     'w-full',
@@ -19,19 +18,13 @@ export const anchorVariants = cva(
   {
     variants: {
       variant: {
-        primary: [
-          'text-slate-50',
-          'bg-gradient-to-r',
-          'from-green-600',
-          'to-green-500',
-          'hover:brightness-[115%]'
-        ],
+        primary: ['text-slate-50', 'bg-indigo-500', 'hover:brightness-[115%]'],
         primaryOutline: [
-          'text-green-600',
+          'text-indigo-600',
           'border',
-          'border-green-600',
-          'hover:bg-green-500',
-          'hover:border-green-500',
+          'border-indigo-500',
+          'hover:bg-indigo-500',
+          'hover:border-indigo-500',
           'hover:text-slate-50'
         ],
         secondary: [

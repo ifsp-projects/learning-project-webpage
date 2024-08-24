@@ -3,6 +3,11 @@ import ToastMessage from '@/components/toolkit/ToastMessage'
 import { GTMInjection } from '@/gtm'
 
 import '@/styles/index.scss'
+import 'swiper/css'
+import 'swiper/css/bundle'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import 'swiper/css/scrollbar'
 
 export default function RootLayout({
   children
@@ -14,7 +19,7 @@ export default function RootLayout({
       <head>
         <GTMInjection />
       </head>
-      <body className="bg-zinc-50 text-slate-700 selection:bg-teal-100 selection:text-teal-900">
+      <body className="bg-slate-50 text-slate-700 selection:bg-indigo-100 selection:text-indigo-500">
         <ToastMessage />
         <Navbar />
         {children}

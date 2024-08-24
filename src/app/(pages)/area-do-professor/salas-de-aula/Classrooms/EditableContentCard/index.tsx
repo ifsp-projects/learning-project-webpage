@@ -11,7 +11,7 @@ export const EditableContentCard: React.FC<EditableContentCardProps> = ({
 }) => {
   return (
     <article
-      className={`animate__animated animate__fadeIn group relative flex h-full w-full flex-1 cursor-pointer flex-col rounded-sm border border-slate-300 bg-white ring-1 duration-300 lg:max-w-xs ${isSelected ? 'ring-green-600' : 'ring-transparent'}`}
+      className={`animate__animated animate__fadeIn group relative flex h-full w-full flex-1 cursor-pointer flex-col rounded-sm border border-slate-300 bg-white ring-1 duration-300 lg:max-w-xs ${isSelected ? 'ring-indigo-500' : 'ring-transparent'}`}
     >
       <figure
         className="relative w-full"
@@ -36,7 +36,7 @@ export const EditableContentCard: React.FC<EditableContentCardProps> = ({
           </p>
         </div>
         <div className="flex flex-col gap-2">
-          <button className="rounded-sm bg-gradient-to-br from-green-600 to-teal-500 px-4 py-2 text-xs text-white transition-all duration-300 hover:brightness-105">
+          <button className="rounded-sm bg-indigo-500 px-4 py-2 text-xs text-white transition-all duration-300 hover:brightness-105">
             Editar
           </button>
           <button className="rounded-sm bg-white px-4 py-2 text-xs transition-all duration-300 hover:bg-slate-100">

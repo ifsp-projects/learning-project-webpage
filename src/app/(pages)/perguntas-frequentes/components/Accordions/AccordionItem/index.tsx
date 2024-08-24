@@ -10,7 +10,7 @@ export const AccordionItem: React.FC<AccordionItemProps> = ({ copy }) => {
 
   return (
     <button
-      className={`flex w-full cursor-pointer flex-col justify-center rounded-sm border bg-white p-3 ring-1 ring-slate-600 duration-default hover:border-green-500 hover:ring-green-500 lg:items-start lg:p-4`}
+      className={`flex w-full cursor-pointer flex-col justify-center rounded-sm border bg-white p-3 ring-1 ring-slate-600 duration-default hover:border-indigo-500 hover:ring-indigo-500 lg:items-start lg:p-4`}
       onClick={() => setIsQuestionOpen(!isQuestionOpen)}
     >
       <div
@@ -18,7 +18,7 @@ export const AccordionItem: React.FC<AccordionItemProps> = ({ copy }) => {
           isQuestionOpen ? 'mb-2' : 'mb-0'
         } flex w-full items-center justify-between transition-all`}
       >
-        <p className="text-left text-sm font-semibold transition group-hover:text-green-500 group-hover:brightness-125 lg:text-base">
+        <p className="text-left text-sm font-semibold transition group-hover:text-indigo-500 group-hover:brightness-125 lg:text-base">
           {copy.title}
         </p>
 

@@ -84,19 +84,19 @@ export const Header: React.FC<HeaderProps> = () => {
         </article>
         <div className="flex w-full justify-between gap-8">
           <ul className="flex w-full items-center gap-3">
-            <li className="rounded-full bg-green-100 px-3 py-1 text-xs text-green-600">
+            <li className="rounded-full bg-indigo-100 px-3 py-1 text-xs text-indigo-500">
               html
             </li>
-            <li className="rounded-full bg-green-100 px-3 py-1 text-xs text-green-600">
+            <li className="rounded-full bg-indigo-100 px-3 py-1 text-xs text-indigo-500">
               css
             </li>
-            <li className="rounded-full bg-green-100 px-3 py-1 text-xs text-green-600">
+            <li className="rounded-full bg-indigo-100 px-3 py-1 text-xs text-indigo-500">
               javascript
             </li>
-            <li className="rounded-full bg-green-100 px-3 py-1 text-xs text-green-600">
+            <li className="rounded-full bg-indigo-100 px-3 py-1 text-xs text-indigo-500">
               python
             </li>
-            <li className="rounded-full bg-green-100 px-3 py-1 text-xs text-green-600">
+            <li className="rounded-full bg-indigo-100 px-3 py-1 text-xs text-indigo-500">
               shell script
             </li>
           </ul>

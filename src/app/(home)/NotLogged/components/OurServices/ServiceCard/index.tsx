@@ -6,7 +6,7 @@ import { ServiceCardProps } from '../types'
 export const ServiceCard: React.FC<ServiceCardProps> = ({ copy }) => {
   return (
     <li className="flex flex-col items-center gap-4 rounded-sm border border-slate-300 p-4 shadow">
-      <figure className="rounded-full bg-teal-50 p-4">
+      <figure className="rounded-full bg-indigo-50 p-4">
         {SERVICES_ICONS[copy.icon]}
       </figure>
       <article className="flex flex-col items-center gap-2">
