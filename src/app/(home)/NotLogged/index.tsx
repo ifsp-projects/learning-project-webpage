@@ -10,7 +10,7 @@ import { WhyUseOurPlatform } from './components/WhyUseOurPlatform'
 export const NotLogged: React.FC = () => {
   return (
     <>
-      <main className="min-h-[62vh]">
+      <main className="min-h-[62vh] overflow-x-hidden">
         <Header />
         <OurServices />
         <AboutUs />
