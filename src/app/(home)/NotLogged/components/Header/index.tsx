@@ -24,7 +24,7 @@ export const Header: React.FC = () => {
             inovadora. Simplifique suas operações e otimize a administração
             educacional.
           </p>
-          <Anchor className="mt-4 lg:mt-8" href="/quem-somos">
+          <Anchor className="mt-4 lg:mt-8" href="/perguntas-frequentes">
             Quero saber mais
           </Anchor>
         </article>

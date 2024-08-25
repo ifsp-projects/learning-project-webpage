@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { IoIosSearch } from 'react-icons/io'
 
+import { Anchor } from '@/components/toolkit/Anchor'
 import { Container } from '@/components/toolkit/Container'
 
 import { Notification } from './icons/Notifications'
@@ -17,7 +18,7 @@ export const DesktopNavbarLayout: React.FC = () => {
     >
       <nav className="flex w-full items-center justify-between gap-4">
         <div className="flex w-full flex-1 items-center gap-4 lg:gap-8">
-          <figure className="max-w-12">
+          <Anchor className="max-w-12" href="/" variant="custom">
             <Image
               alt="Company Logo"
               className="w-full object-cover"
@@ -25,21 +26,37 @@ export const DesktopNavbarLayout: React.FC = () => {
               src="/components/logo.png"
               width={94}
             />
-          </figure>
-          <ul className="hidden items-center justify-between gap-6 lg:flex lg:gap-8">
-            <li className="cursor-pointer text-sm font-medium text-slate-400 transition-all duration-300 hover:text-slate-500">
+          </Anchor>
+          <div className="hidden items-center justify-between gap-6 lg:flex lg:gap-8">
+            <Anchor
+              className="cursor-pointer text-sm font-medium text-slate-400 transition-all duration-300 hover:text-slate-500"
+              href="/"
+              variant="custom"
+            >
               Home
-            </li>
-            <li className="cursor-pointer text-sm font-medium text-slate-400 transition-all duration-300 hover:text-slate-500">
+            </Anchor>
+            <Anchor
+              className="cursor-pointer text-sm font-medium text-slate-400 transition-all duration-300 hover:text-slate-500"
+              href="/salas-de-aula"
+              variant="custom"
+            >
               Meu Aprendizado
-            </li>
-            <li className="cursor-pointer text-sm font-medium text-slate-400 transition-all duration-300 hover:text-slate-500">
+            </Anchor>
+            <Anchor
+              className="cursor-pointer text-sm font-medium text-slate-400 transition-all duration-300 hover:text-slate-500"
+              href="/pricing"
+              variant="custom"
+            >
               Pricing
-            </li>
-            <li className="cursor-pointer text-sm font-medium text-slate-400 transition-all duration-300 hover:text-slate-500">
+            </Anchor>
+            <Anchor
+              className="cursor-pointer text-sm font-medium text-slate-400 transition-all duration-300 hover:text-slate-500"
+              href="/quem-somos"
+              variant="custom"
+            >
               Suporte
-            </li>
-          </ul>
+            </Anchor>
+          </div>
         </div>
         <div className="flex w-full flex-1 items-center justify-end gap-10">
           <div className="relative flex w-full flex-1">
