@@ -1,0 +1,84 @@
+.cta {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding: 8px 12px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.cta:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #b1dae7;
+  width: 32px;
+  height: 32px;
+  transition: all 0.3s ease;
+}
+
+.cta span {
+  position: relative;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #234567;
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: #b1dae7;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active {
+  transform: scale(0.95);
+}
+
+.cl-internal-zfbclv {
+  display: none;
+}
+
+.cl-internal-b3fm6y {
+  display: none;
+}
+
+iframe[id^='cf-chl-widget'] {
+  @apply mb-2 mt-5 rounded-md;
+
+  width: 100% !important;
+}
+
+.profile-picture-border {
+  border: 4px solid white;
+}
+
+.description p span {
+  font-size: 14px;
+}
+
+.description h5 span {
+  font-size: 14px;
+}

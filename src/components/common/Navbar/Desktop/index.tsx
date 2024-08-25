@@ -13,7 +13,7 @@ export const DesktopNavbarLayout: React.FC = () => {
       className="mx-auto hidden w-full max-w-[1520px] px-12 py-4 lg:block"
       container="fluid"
       data-cid="desktop-navbar"
-      wrapperClassName="w-full bg-white border-b border-slate-100"
+      wrapperClassName="w-full bg-white fixed border-b border-slate-100 z-[99999999]"
     >
       <nav className="flex w-full items-center justify-between gap-4">
         <div className="flex w-full flex-1 items-center gap-4 lg:gap-8">
@@ -26,7 +26,7 @@ export const DesktopNavbarLayout: React.FC = () => {
               width={94}
             />
           </figure>
-          <ul className="hidden items-center justify-between gap-6 lg:flex">
+          <ul className="hidden items-center justify-between gap-6 lg:flex lg:gap-8">
             <li className="cursor-pointer text-sm font-medium text-slate-400 transition-all duration-300 hover:text-slate-500">
               Home
             </li>

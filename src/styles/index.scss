@@ -6,8 +6,10 @@
 
 @import 'plyr-react/plyr.css';
 
+// Components
 @import 'components/course-description.scss';
 @import 'components/video-player.scss';
+@import 'components/cta.scss';
 
 html {
   scroll-behavior: smooth;
@@ -22,7 +24,7 @@ html {
 }
 
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
   font-size: 16px;
 }
@@ -36,4 +38,3 @@ html {
   --plyr-font-size-small: 14px;
   --plyr-tooltip-shadow: 0px;
 }
-
