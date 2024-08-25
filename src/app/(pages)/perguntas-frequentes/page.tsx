@@ -18,7 +18,7 @@ export async function generateMetadata() {
 const Page: NextPage = () => {
   return (
     <>
-      <main>
+      <main className="min-h-[62vh] overflow-x-hidden pt-20">
         <Header />
         <Accordions />
       </main>
