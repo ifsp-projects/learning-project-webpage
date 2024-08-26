@@ -40,7 +40,7 @@ jobs:
           yarn lint --fix
 
       - name: Post NextJS Cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
 
       - name: Authorization
         run: |
