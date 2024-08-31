@@ -35,7 +35,9 @@ export const Header: React.FC<headerProps> = ({
             <Image
               alt="Foto de perfil"
               className="ml-4 max-h-40 rounded-full border-2"
+              height={200}
               src="https://via.placeholder.com/150"
+              width={130}
             />
             <div className="ml-6 flex h-auto flex-col p-4">
               <table className="w-auto table-auto text-xl">
