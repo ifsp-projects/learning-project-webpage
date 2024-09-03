@@ -1,6 +1,5 @@
 import { Navbar } from '@/components/common/Navbar'
 import ToastMessage from '@/components/toolkit/ToastMessage'
-import { GTMInjection } from '@/gtm'
 import { Theme } from '@radix-ui/themes'
 
 import '@/styles/index.scss'
@@ -18,9 +17,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <head>
-        <GTMInjection />
-      </head>
       <body className="bg-slate-50 text-slate-700 selection:bg-indigo-100 selection:text-indigo-500">
         <Theme>
           <ToastMessage />
