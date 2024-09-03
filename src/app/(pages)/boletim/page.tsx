@@ -1,11 +1,11 @@
-import React from 'react'
+import { NextPage } from 'next'
 
 import Footer from '../../../components/common/Footer'
 import { Charts } from './components/Charts'
 import { Header } from './components/Header'
 import { Tab } from './components/Tab'
 
-const Page: React.FC = () => {
+const Page: NextPage = () => {
   return (
     <>
       <Header />
