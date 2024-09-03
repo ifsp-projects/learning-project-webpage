@@ -1,1 +1,1 @@
-export interface tableProps {}
+export interface TabProps {}

@@ -3,24 +3,19 @@ import React from 'react'
 
 import { Container } from '../../../../../components/toolkit/Container'
 import { Card } from '../Card'
+import { userData } from './data'
+import { HeaderProps } from './types'
 
-interface headerProps {
-  cpf: string
-  curso: string
-  matricula: string
-  name: string
-  periodo: string
-  situacao: string
-}
-
-export const Header: React.FC<headerProps> = ({
-  name,
-  matricula,
+export const Header: React.FC<HeaderProps> = ({
   cpf,
-  periodo,
   curso,
+  matricula,
+  name,
+  periodo,
   situacao
 }) => {
+  const cellClass = 'mr-4 flex justify-end'
+
   return (
     <Container
       as="section"
@@ -42,30 +37,17 @@ export const Header: React.FC<headerProps> = ({
             <div className="ml-6 flex h-auto flex-col p-4">
               <table className="w-auto table-auto text-xl">
                 <tbody className="p-4">
-                  <tr className="justify-between">
-                    <td className="mr-4 flex justify-end">Nome:</td>
-                    <td className=" ">{name}</td>
-                  </tr>
-                  <tr>
-                    <td className="mr-4 flex justify-end">Matricula:</td>
-                    <td className=" ">{matricula}</td>
-                  </tr>
-                  <tr className="justify-between">
-                    <td className="mr-4 flex justify-end">CPF:</td>
-                    <td className=" ">{cpf}</td>
-                  </tr>
-                  <tr>
-                    <td className="mr-4 flex justify-end">Período:</td>
-                    <td className=" ">{periodo}</td>
-                  </tr>
-                  <tr className="justify-between">
-                    <td className="mr-4 flex justify-end">Curso:</td>
-                    <td className=" ">{curso}</td>
-                  </tr>
-                  <tr>
-                    <td className="mr-4 flex justify-end">Situação:</td>
-                    <td className="text-green-400">{situacao}</td>
-                  </tr>
+                  {userData.map((value, index) => {
+                    return (
+                      <tr
+                        className="justify-between"
+                        key={`${value} - ${index}`}
+                      >
+                        <td className={cellClass}>{value.label}</td>
+                        <td className={value.className || ''}>{value.value}</td>
+                      </tr>
+                    )
+                  })}
                 </tbody>
               </table>
             </div>

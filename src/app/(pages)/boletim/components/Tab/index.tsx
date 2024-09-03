@@ -1,9 +1,9 @@
 import { Tabs } from '@radix-ui/themes'
 
 import { TableNote } from '../Table'
-import { tableProps } from './types'
+import { TabProps } from './types'
 
-export const Tab: React.FC<tableProps> = () => {
+export const Tab: React.FC<TabProps> = () => {
   return (
     <>
       <h2 className="font-semibold">Informações Escolares</h2>
