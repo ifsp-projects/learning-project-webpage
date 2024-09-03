@@ -6,14 +6,7 @@ import { Card } from '../Card'
 import { userData } from './data'
 import { HeaderProps } from './types'
 
-export const Header: React.FC<HeaderProps> = ({
-  cpf,
-  curso,
-  matricula,
-  name,
-  periodo,
-  situacao
-}) => {
+export const Header: React.FC<HeaderProps> = () => {
   const cellClass = 'mr-4 flex justify-end'
 
   return (
