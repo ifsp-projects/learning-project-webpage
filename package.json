@@ -11,7 +11,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@headlessui/react": "^2.1.5",
+    "@headlessui/react": "^2.1.7",
     "@hookform/resolvers": "^3.8.0",
     "@iconify/react": "^5.0.1",
     "@radix-ui/themes": "^3.1.3",
