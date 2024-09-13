@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className="bg-slate-50 text-slate-700 selection:bg-indigo-100 selection:text-indigo-500">
+      <body className="bg-slate-50 text-slate-600 selection:bg-indigo-100 selection:text-indigo-500">
         <Theme>
           <ToastMessage />
           <Navbar />

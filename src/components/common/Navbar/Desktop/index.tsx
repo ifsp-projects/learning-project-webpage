@@ -29,28 +29,28 @@ export const DesktopNavbarLayout: React.FC = () => {
           </Anchor>
           <div className="hidden items-center justify-between gap-6 lg:flex lg:gap-8">
             <Anchor
-              className="cursor-pointer text-sm font-medium text-slate-400 transition-all duration-300 hover:text-slate-500"
+              className="cursor-pointer text-sm font-medium text-slate-600 transition-all duration-300 hover:text-slate-500"
               href="/"
               variant="custom"
             >
               Home
             </Anchor>
             <Anchor
-              className="cursor-pointer text-sm font-medium text-slate-400 transition-all duration-300 hover:text-slate-500"
+              className="cursor-pointer text-sm font-medium text-slate-600 transition-all duration-300 hover:text-slate-500"
               href="/salas-de-aula"
               variant="custom"
             >
               Meu Aprendizado
             </Anchor>
             <Anchor
-              className="cursor-pointer text-sm font-medium text-slate-400 transition-all duration-300 hover:text-slate-500"
+              className="cursor-pointer text-sm font-medium text-slate-600 transition-all duration-300 hover:text-slate-500"
               href="/pricing"
               variant="custom"
             >
               Pricing
             </Anchor>
             <Anchor
-              className="cursor-pointer text-sm font-medium text-slate-400 transition-all duration-300 hover:text-slate-500"
+              className="cursor-pointer text-sm font-medium text-slate-600 transition-all duration-300 hover:text-slate-500"
               href="/quem-somos"
               variant="custom"
             >

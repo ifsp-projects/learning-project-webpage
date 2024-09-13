@@ -13,7 +13,7 @@ export async function generateMetadata() {
 }
 
 export default function Home() {
-  const isUserLogged = false
+  const isUserLogged = true
 
   return isUserLogged ? <Logged /> : <NotLogged />
 }
