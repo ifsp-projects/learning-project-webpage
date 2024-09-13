@@ -19,7 +19,7 @@ const Footer = () => {
       <div className="flex min-h-[360px] w-full flex-col gap-8 border-t border-slate-300 bg-slate-50 px-8 py-16">
         <article className="mx-auto w-full max-w-6xl">
           <span className="flex w-full cursor-pointer justify-start text-lg font-[700] lg:text-3xl">
-            <span>#nomeProjeto</span>
+            <span>Projetinho :D</span>
           </span>
         </article>
         <article className="mx-auto w-full max-w-6xl flex-row">
