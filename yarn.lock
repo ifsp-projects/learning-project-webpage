@@ -239,6 +239,17 @@
   resolved "https://registry.yarnpkg.com/@croct/json/-/json-2.1.0.tgz#2d6da8b52cab6d1b1f06642a92f751484031d093"
   integrity sha512-UrWfjNQVlBxN+OVcFwHmkjARMW55MBN04E9KfGac8ac8z1QnFVuiOOFtMWXCk3UwsyRqhsNaFoYLZC+xxqsVjQ==
 
+"@croct/plug-next@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@croct/plug-next/-/plug-next-0.2.1.tgz#33cf44fd4943d39a80fef210a956e77e0a6beb18"
+  integrity sha512-spt70NLQ9GcOf1J/BRT7UUkcyKOocO36L6RZ9Z2+WUje4VE37VQsvMEeMRaa5qHVpPc2m8VTOrRop3oSMmfgAw==
+  dependencies:
+    "@croct/plug" "^0.16.2"
+    "@croct/plug-react" "^0.8.1"
+    "@croct/sdk" "^0.17.4"
+    cookie "^0.6.0"
+    uuid "^10.0.0"
+
 "@croct/plug-react@^0.8.1":
   version "0.8.1"
   resolved "https://registry.yarnpkg.com/@croct/plug-react/-/plug-react-0.8.1.tgz#273fd2a97271d598b4c6a4a81ce5100ef853c192"
