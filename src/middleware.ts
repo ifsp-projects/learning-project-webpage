@@ -20,7 +20,6 @@ export async function middleware(request: NextRequest) {
     response.headers.set(name, value)
   })
 
-  // Getters
   const previewCroctToken = headers.get(COOKIE.PREVIEW_TOKEN)
   const clientId = headers.get(HEADERS.CLIENT_ID)
   const userAgent = getUserAgentMiddleware(request)

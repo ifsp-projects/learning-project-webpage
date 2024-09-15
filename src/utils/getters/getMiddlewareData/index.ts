@@ -29,20 +29,23 @@ export const getMiddlewareData = (): GetMiddlewareDataReturn => {
     cookieStore.get('userAgent')
   )
 
+  const cookiesSearchParamsValue = getCookieValue<string>(
+    cookieStore.get('searchParams') || ''
+  )
   const cookiesSearchParams =
-    cookieStore.get('searchParams') ||
-    JSON.parse(
-      getCookieValue<string>(cookieStore.get('searchParams') || '') || ''
-    ) ||
-    null
-  const cookiesUtmStoredData =
-    cookieStore.get('utmStaticData') ||
-    JSON.parse(
-      getCookieValue<string>(cookieStore.get('utmStaticData') || '') || ''
-    ) ||
-    null
+    cookiesSearchParamsValue && cookiesSearchParamsValue.trim() !== ''
+      ? JSON.parse(cookiesSearchParamsValue)
+      : null
 
-  const headersClientId = headersStore.get(HEADERS.CLIENT_ID) ?? undefined
+  const cookiesUtmStoredDataValue = getCookieValue<string>(
+    cookieStore.get('utmStaticData') || ''
+  )
+  const cookiesUtmStoredData =
+    cookiesUtmStoredDataValue && cookiesUtmStoredDataValue.trim() !== ''
+      ? JSON.parse(cookiesUtmStoredDataValue)
+      : null
+
+  const headersClientId = headersStore.get(HEADERS.CLIENT_ID) || ''
 
   return {
     cookiesUserAgent,
