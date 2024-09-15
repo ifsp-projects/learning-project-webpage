@@ -1,8 +1,8 @@
 import React from 'react'
 
+import { ContentCard } from '@/components/common/ContentCard'
 import { Container } from '@/components/toolkit/Container'
 
-import { ClassroomCard } from './ClassroomCard'
 import { FAKE_DATA } from './data'
 
 export const MyClassRooms: React.FC = () => {
@@ -21,9 +21,9 @@ export const MyClassRooms: React.FC = () => {
           materiais de aula
         </p>
       </article>
-      <ul className="grid grid-cols-1 items-center gap-6 sm:grid-cols-2 md:grid-cols-3">
+      <ul className="grid grid-cols-1 items-center gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {[...Array(5)].map((_, index) => (
-          <ClassroomCard copy={FAKE_DATA} key={index} />
+          <ContentCard card={FAKE_DATA} key={index} />
         ))}
       </ul>
     </Container>

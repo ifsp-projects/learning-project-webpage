@@ -18,7 +18,7 @@ export async function generateMetadata() {
 const Page: NextPage = () => {
   return (
     <>
-      <main className="flex w-full flex-col gap-8 py-12 lg:gap-12 lg:py-20">
+      <main className="flex w-full flex-col gap-8 pb-12 pt-16 lg:gap-12 lg:pb-20 lg:pt-32">
         <Header />
         <ProfileDetails />
       </main>
