@@ -16,7 +16,11 @@ export const googleOptions = {
 
     if (!user) {
       try {
-        const userData = await auth.users.loginUser(googleId)
+        const userData = await auth.users.loginUser({
+          email,
+          callbackUrl: 'http://localhost:3000/',
+          redirect: false
+        })
 
         if (userData) {
           return {

@@ -11,6 +11,7 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
 import '@radix-ui/themes/styles.css'
+import { AuthProvider } from '@/contexts/AuthProvider'
 
 export default function RootLayout({
   children
@@ -20,15 +21,17 @@ export default function RootLayout({
   const { headersClientId } = getMiddlewareData()
 
   return (
-    <html lang="pt-br">
-      <body className="bg-slate-50 text-slate-600 selection:bg-indigo-100 selection:text-indigo-500">
-        <CroctProvider clientId={headersClientId!}>
-          <Theme>
-            <ToastMessage />
-            <Navbar />
-            {children}
-          </Theme>
-        </CroctProvider>
+    <html lang="pt">
+      <body className="bg-slate-50 text-slate-600 selection:bg-indigo-50 selection:text-slate-700">
+        <AuthProvider>
+          <CroctProvider clientId={headersClientId!}>
+            <Theme>
+              <ToastMessage />
+              <Navbar />
+              {children}
+            </Theme>
+          </CroctProvider>
+        </AuthProvider>
       </body>
     </html>
   )

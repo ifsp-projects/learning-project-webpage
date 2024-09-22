@@ -4,11 +4,14 @@ import { IoIosSearch } from 'react-icons/io'
 
 import { Anchor } from '@/components/toolkit/Anchor'
 import { Container } from '@/components/toolkit/Container'
+import { getUserSession } from '@/utils/auth/getUserSession'
 
+import { AuthButtons } from './AuthButtons'
 import { Notification } from './icons/Notifications'
-import { User } from './icons/User'
 
-export const DesktopNavbarLayout: React.FC = () => {
+export const DesktopNavbarLayout: React.FC = async () => {
+  const user = await getUserSession()
+
   return (
     <Container
       className="mx-auto hidden w-full max-w-[1520px] px-12 py-4 lg:block"
@@ -71,18 +74,23 @@ export const DesktopNavbarLayout: React.FC = () => {
               type="text"
             />
           </div>
-          <Notification className="h-5 w-5 text-slate-400" />
-          <Link className="group overflow-hidden" href="/perfil">
-            {/* <Image
-              alt="undefined-profile-picture"
-              className="cursor-pointer rounded-full transition-all duration-300 group-hover:brightness-95"
-              height={35}
-              src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
-              width={35}
-            /> */}
-            <User className="cursor-pointer text-slate-400 transition-all duration-300 group-hover:brightness-95" />
-          </Link>
-          {/* <Button>Criar conta</Button> */}
+          {user ? (
+            <>
+              <Notification className="h-5 w-5 text-slate-400" />
+              <Link className="group overflow-hidden" href="/perfil">
+                <Image
+                  alt="undefined-profile-picture"
+                  className="cursor-pointer rounded-full transition-all duration-300 group-hover:brightness-95"
+                  height={35}
+                  src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+                  width={35}
+                />
+                {/* <User className="cursor-pointer text-slate-400 transition-all duration-300 group-hover:brightness-95" /> */}
+              </Link>
+            </>
+          ) : (
+            <AuthButtons />
+          )}
         </div>
       </nav>
     </Container>

@@ -17,11 +17,15 @@ export const authOptions: AuthOptions = {
   ],
   callbacks: {
     jwt: async data => {
+      console.log(data)
       const { user, token, trigger, session } = data
 
       let userData: User = token.userData as User
 
-      if (user) userData = user as unknown as User
+      if (user) {
+        userData = user as unknown as User
+        token.email = user.email
+      }
 
       if (trigger === 'update') {
         if (session) {
@@ -34,15 +38,19 @@ export const authOptions: AuthOptions = {
 
       token.userData = userData
       return token
+    },
+    session: async props => {
+      const { session, token: jwt } = props
+
+      session.user = {
+        ...session.user,
+        email: jwt.email as string
+      }
+
+      console.log(session)
+
+      return session
     }
-    // session: async props => {
-    //   const { session, token: jwt } = props
-
-    //   const { userData } = jwt
-    //   session.user = userData
-
-    //   return Promise.resolve(session)
-    // }
   },
   pages: {
     signIn: '/?should_authenticate=true'
