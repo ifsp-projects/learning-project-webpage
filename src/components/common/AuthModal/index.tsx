@@ -2,7 +2,7 @@
 
 import { signIn } from 'next-auth/react'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { toast } from 'react-toastify'
 
 import { Button } from '@/components/toolkit/Button'
@@ -47,6 +47,30 @@ export const AuthModal: React.FC = () => {
       setIsLoading(false)
     }
   }
+
+  useEffect(() => {
+    const handleCustomEvent = (event: CustomEvent) => {
+      const { action } = event.detail
+
+      if (action === 'open') {
+        setIsModalOpen(true)
+      } else if (action === 'close') {
+        setIsModalOpen(false)
+      }
+    }
+
+    document.addEventListener(
+      'auth-modal-event',
+      handleCustomEvent as EventListener
+    )
+
+    return () => {
+      document.removeEventListener(
+        'auth-modal-event',
+        handleCustomEvent as EventListener
+      )
+    }
+  }, [])
 
   return (
     <Modal isOpen={isModalOpen} setIsOpen={setIsModalOpen}>

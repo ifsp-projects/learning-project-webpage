@@ -2,19 +2,27 @@
 
 import { signIn } from 'next-auth/react'
 
-import { Button } from '@/components/toolkit/Button'
+import { ModalButton } from '@/components/common/ModalButton'
 
 export const AuthButtons: React.FC = () => {
   return (
     <div className="flex items-center gap-4">
-      <Button
+      <ModalButton
         className="md:text-sm"
+        customEventData={{ action: 'close' }}
+        customEventVariant="auth-modal-event"
         onClick={() => signIn('credentials', { callbackUrl: '/' })}
         variant="primaryOutline"
       >
         Entrar
-      </Button>
-      <Button className="md:text-sm">Criar Conta</Button>
+      </ModalButton>
+      <ModalButton
+        className="md:text-sm"
+        customEventData={{ action: 'close' }}
+        customEventVariant="auth-modal-event"
+      >
+        Criar Conta
+      </ModalButton>
     </div>
   )
 }
