@@ -10,7 +10,7 @@ import { AuthButtons } from './AuthButtons'
 import { Notification } from './icons/Notifications'
 
 export const DesktopNavbarLayout: React.FC = async () => {
-  const user = await getUserSession()
+  const session = await getUserSession()
 
   return (
     <Container
@@ -74,7 +74,7 @@ export const DesktopNavbarLayout: React.FC = async () => {
               type="text"
             />
           </div>
-          {user ? (
+          {session ? (
             <>
               <Notification className="h-5 w-5 text-slate-400" />
               <Link className="group overflow-hidden" href="/perfil">
