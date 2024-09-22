@@ -1,3 +1,6 @@
+import { NextPage } from 'next'
+
+import { getUserSession } from '@/utils/auth/getUserSession'
 import { getMetaData } from '@/utils/getters/getMetaData'
 
 import { Logged } from './Logged'
@@ -12,8 +15,10 @@ export async function generateMetadata() {
   })
 }
 
-export default function Home() {
-  const isUserLogged = true
+const Page: NextPage = async () => {
+  const user = await getUserSession()
 
-  return isUserLogged ? <Logged /> : <NotLogged />
+  return user ? <Logged /> : <NotLogged />
 }
+
+export default Page

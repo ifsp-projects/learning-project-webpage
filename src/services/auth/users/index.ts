@@ -1,3 +1,4 @@
+import { CredentialsProps } from '@/types/auth/credentials'
 import { User } from '@/types/auth/user'
 
 import { CreateUser } from './types'
@@ -7,11 +8,14 @@ export class Users {
     this.baseUrl = baseUrl
   }
 
-  public loginUser = async (authId: string): Promise<User | undefined> => {
+  public loginUser = async (
+    credentials: CredentialsProps
+  ): Promise<User | undefined> => {
     try {
-      console.log('login user')
-
-      return {} as User
+      return {
+        email: credentials.email,
+        password: credentials.password
+      } as User
     } catch (userLoginError) {
       console.log(userLoginError)
     }
